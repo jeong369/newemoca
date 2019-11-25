@@ -6,6 +6,10 @@ from .models import Info
 from .forms import CreateForm
 
 # Create your views here.
+def main(request) :
+    
+    return render(request, 'notice/main.html')
+
 def lists(request) :
     contents = Info.objects.all()
     context = {'contents' : contents}

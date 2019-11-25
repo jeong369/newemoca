@@ -5,7 +5,8 @@ app_name = 'notice'
 
 urlpatterns = [
     # app
-    path('', views.lists, name="noticelists"),
+    path('', views.main, name="main"),
+    path('lists/', views.lists, name="noticelists"),
     path('create/', views.create, name="noticecreate"),
     
     # API Link
