@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block style %} 
+<style>
+    #post {
+
+        height: 800px;
+        width: 100%;
+        padding: 20px 20px 20px 20px;
+
+
+    }
+    .submitBtn {
+        text-align: center;
+    }
+</style>
+
+
+{% endblock %}
+
+{% block body %}
+<div id="post">
+    <form class="modal-contentsignup" action="/notice/create/" method="POST">
+      {% csrf_token %}
+      <h1 style="text:bold;text-align:center">POST</h1>
+        <label><b>제목 : </b></label>
+        <input type="text" name="title">
+        <br>
+
+        <label><b>내용 : </b></label>
+        <input type="textarea" name="content">
+        <br>
+
+        <div class="submitBtn">
+          <input type="submit" class="sign_in_up" value="확인">
+          <!-- <input type="button" onclick="document.getElementById('id02').style.display='none'" class="cancel" value="Cancel"> -->
+        </div>
+      </div>
+    </form>
+</div>
+{% endblock %}

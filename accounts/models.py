@@ -18,6 +18,9 @@ class User(models.Model):
 		('o', '기타'),
     ))
     is_staff = models.BooleanField(default=False)
+
+    def __str__(self) :
+        return self.name
     
     # USERNAME_FIELD = 'name'
 

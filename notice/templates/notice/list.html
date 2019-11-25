@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block style %} 
+<style>
+
+</style>
+
+
+{% endblock %}
+
+{% block body %}
+    <div id="notice">
+        {% if messages %}
+            {% for message in messages %}
+                <p v-model="message" style="display:none;">{{message}}</p>
+            {% endfor %}
+        {% endif %}
+        <button onClick="location.href='/notice/create/'">글쓰기</button>
+        <br>
+    
+        {% for post in contents %}
+            {{ post.title }} : {{ post.content}}
+            {{ post.created_at }}
+        {% endfor %}
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script>
+        var noticeapp = new Vue({
+            el: '#notice',
+            delimiters: ['[[', ']]'],
+            data: {
+                message : ''
+            },
+            methods : {
+            },
+            mounted() {
+                if (this.message) {
+                        alert(this.message)
+                    }
+            }
+        })
+
+
+    </script>
+{% endblock %}

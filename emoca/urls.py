@@ -41,6 +41,9 @@ urlpatterns = [
     # app
     path('admin/', admin.site.urls),
     path('accounts/', include('accounts.urls')),
+    path('bigfive/', include('bigfive.urls')),
+    path('notice/', include('notice.urls')),
+
 
 
     # Admin API
