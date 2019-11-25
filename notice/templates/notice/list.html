@@ -2,7 +2,16 @@
 
 {% block style %} 
 <style>
+    #notice {
 
+    }
+    .container {
+        margin-top: 50px;
+;
+    }
+    .row {
+        margin-top: 10px;
+    }
 </style>
 
 
@@ -10,18 +19,34 @@
 
 {% block body %}
     <div id="notice">
+        
         {% if messages %}
             {% for message in messages %}
                 <p v-model="message" style="display:none;">{{message}}</p>
             {% endfor %}
         {% endif %}
-        <button onClick="location.href='/notice/create/'">글쓰기</button>
-        <br>
-    
-        {% for post in contents %}
-            {{ post.title }} : {{ post.content}}
-            {{ post.created_at }}
-        {% endfor %}
+
+        
+        <div class="container">
+            <div class="row justify-content-end mb-5">
+                <button type="button" class="btn btn-light" onClick="location.href='/notice/create/'">글쓰기</button>
+            </div>
+            <div class="row">
+                  {% for post in contents %}
+                  <div class="col-6">
+                    <div class="card">
+                      <div class="card-header">공지사항1</div>
+                      <div class="card-body">
+                        <h5 class="card-title">{{ post.title }}</h5>
+                        <p class="card-text">번호1</p>
+                        <p class="card-text">{{ post.content }}</p>
+                        <p class="card-text">{{ post.created_at }}</p>
+                      </div>
+                    </div>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
 
     </div>
 
