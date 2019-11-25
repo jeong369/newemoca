@@ -14,8 +14,36 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+from django.contrib.auth.decorators import login_required
+
+# swagger import
+from drf_yasg import openapi
+from drf_yasg.views import get_schema_view
+from rest_framework import permissions
+
+# swagger schema
+schema_admin_view = get_schema_view(
+   openapi.Info(
+      title="API_admin",
+      default_version='v1',
+      description="여기는 관리자용 EmoCA DB 활용 페이지입니다.",
+      terms_of_service="https://https://github.com/jeong369/newemoca/",
+      contact=openapi.Contact(email="no"),
+      license=openapi.License(name="emoca"),
+   ),
+    public=False,
+    permission_classes=(permissions.IsAdminUser,)
+)
+
 
 urlpatterns = [
+    # app
     path('admin/', admin.site.urls),
+    path('accounts/', include('accounts.urls')),
+
+
+    # Admin API
+    path('admin/api/doc/', login_required(schema_admin_view.with_ui('swagger', cache_timeout=0)), name='schema-swagger-ui'),
+    path('admin/api/doc/redoc/', login_required(schema_admin_view.with_ui('redoc', cache_timeout=0)), name='schema-redoc'),
 ]

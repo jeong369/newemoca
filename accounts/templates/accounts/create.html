@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block style %} 
+<style>
+    #signup {
+        /* text-align: center; */
+        height: 800px;
+        width: 100%;
+        padding: 20px 20px 20px 20px;
+        /* justify-content: center; */
+
+    }
+    #signupform {
+        display : inline-block;
+        padding: 20px 20px 20px 20px;
+        
+    }
+    .row {
+        margin-bottom: 10px;
+    }
+    label {
+        width: 100px;
+    }
+    .sign_in_up_input {
+        width : 500px;
+    }
+    .submitBtn {
+        text-align: center;
+    }
+</style>
+
+
+{% endblock %}
+
+{% block body %}
+<div id="signup">
+    <form class="modal-contentsignup" action="/accounts/create/" method="POST">
+      {% csrf_token %}
+      <h1 style="text:bold;text-align:center">당신의 정보를 알려주세요</h1>
+      <hr>
+      <div id="signupform" class="container" style="flow">
+        
+        <div class="row">
+            <label class="label" for="nickname"><b>닉네임</b></label>
+            <input class="sign_in_up_input" type="text" placeholder="당신만의 닉네임을 적어주세요." name="name" required>
+            <br>
+        </div>
+
+        <div class="row">
+            <label class="label" for="age"><b>나이</b></label>
+            <input class="sign_in_up_input" type="text" placeholder="만 20세 이상부터 가능합니다. 나이를 적어주세요." name="age" required>
+            <br>
+        </div>
+
+        <div class="row">
+            <label class="label" for="gender"><b>성별</b></label>
+            <input style="margin-top:10px;margin-bottom:10px" type="radio" name="gender" value="m" required>남성 &nbsp;
+            <input style="margin-top:10px;margin-bottom:10px" type="radio" name="gender" value="f" required>여성 &nbsp;
+            <input style="margin-top:10px;margin-bottom:10px" type="radio" name="gender" value="o" required>기타<br>
+        </div>
+  
+  
+        <div class="submitBtn">
+          <input type="submit" class="sign_in_up" value="확인">
+          <!-- <input type="button" onclick="document.getElementById('id02').style.display='none'" class="cancel" value="Cancel"> -->
+        </div>
+      </div>
+    </form>
+</div>
+{% endblock %}
