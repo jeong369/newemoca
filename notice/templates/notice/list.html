@@ -6,11 +6,19 @@
 
     }
     .container {
-        margin-top: 50px;
+        margin-top: 250px;
 ;
     }
     .row {
-        margin-top: 10px;
+        margin-top: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .th-sm {
+        text-align: center;
+    }
+    td {
+        text-align: center;
     }
 </style>
 
@@ -20,50 +28,54 @@
 {% block body %}
     <div id="notice">
         
-        {% if messages %}
-            {% for message in messages %}
-                <p v-model="message" style="display:none;">{{message}}</p>
-            {% endfor %}
+        {% if request.user.is_staff %}
+            <div class="row d-flex justify-content-end">
+                <button onClick="location.href='/notice/create/'">글쓰기</button>
+            </div>
+        {% else %}
+            <div class="row" style="visibility: hidden;">
+                <button onClick="location.href='/notice/create/'">글쓰기</button>
+            </div>
         {% endif %}
-        <button onClick="location.href='/notice/create/'">글쓰기</button>
-        <br>
-    
-        {% for post in contents %}
-            {{ post.title }} : {{ post.content}}
-            {{ post.created_at }}
-        {% endfor %}
-        <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
-        <thead>
-            <tr>
-            <th class="th-sm">번호</th>
-            <th class="th-sm">제목</th>
-            <th class="th-sm">내용</th>
-            <th class="th-sm">날짜</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for post in contents %}
-                <tr>
-                <td>{{ post.id }}</td>
-                <td>{{ post.title }}</td>
-                <td>{{ post.content }}</td>
-                <td>{{ post.created_at }}</td>
-                </tr>
-            {% endfor %}
-            
-        </tbody>
-        
-        </table>
-        <nav aria-label="...">
-            <ul class="pagination pagination-sm">
-                {% for count in contents.length %}
-                {{ count }}
-                <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                {% endfor %}
-            </ul>
-        </nav>
+                
+        <div class="row">
+
+            <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th class="th-sm" style="width:5%">번호</th>
+                        <th class="th-sm" style="width:70%">제목</th>
+                        <th class="th-sm" style="width:25%">날짜</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for post in contents %}
+                    <tr>
+                        <td>{{ post.id }}</td>
+                        <td><a href="{% url 'notice:noticedetail' post.id %}">{{ post.title }}</a></td>
+                        <td>{{ post.created_at }}</td>
+                    </tr>
+                    {% endfor %}
+                    
+                </tbody>
+                
+            </table>
+        </div>
+        <div class="row">
+
+            <nav aria-label="Page navigation example">
+                <ul class="pagination pagination-sm">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    
+                    {% if contents|length == 11 %}
+                    <p>dd</p>
+                    {% endif %}
+                    
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -82,6 +94,9 @@
                 if (this.message) {
                         alert(this.message)
                     }
+                /* {% for count in contents_length %}
+                    <li class="page-item"><a class="page-link" href="#">{{count}}</a></li>
+                    {% endfor %} */
             }
         })
 
