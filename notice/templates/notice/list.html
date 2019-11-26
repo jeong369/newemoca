@@ -2,7 +2,16 @@
 
 {% block style %} 
 <style>
+    #notice {
 
+    }
+    .container {
+        margin-top: 50px;
+;
+    }
+    .row {
+        margin-top: 10px;
+    }
 </style>
 
 
@@ -10,6 +19,7 @@
 
 {% block body %}
     <div id="notice">
+        
         {% if messages %}
             {% for message in messages %}
                 <p v-model="message" style="display:none;">{{message}}</p>

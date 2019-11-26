@@ -5,9 +5,9 @@ app_name = 'bigfive'
 
 urlpatterns = [
     # app
-    # path('create/', views.create),
+    path('create/', views.create),
     
     # API Link
-    # path('user/', views.UserGetSerializer),
-    # path('user/<int:user_pk>/', views.UserInfoSerializer, name='UserInfo'),
+    # path('test/', views.TestGetSerializer),
+    # path('test/<int:test_pk>/', views.TestInfoSerializer, name='getTest'),
 ]

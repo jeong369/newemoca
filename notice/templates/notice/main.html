@@ -2,7 +2,45 @@
 
 {% block style %} 
 <style>
-
+    #main {
+        width:90%;height:500px;
+        background-image:url();
+        background-repeat:no-repeat;
+        background-position:top center;
+        background-size:auto;
+    }
+    .connectedSpace {
+        margin-top: 61px;
+        text-align: center;
+        padding: 0 24px;
+    }
+    .getStarted {
+        margin-top : 84px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    .getStartedApp {
+        width: 350px;
+        height: 60px;
+        padding: 16px;
+        border-radius: 2px;
+        font-size: 24px;
+        font-weight: 500;
+        background-color: blue;
+        color: white;
+        text-align: center;
+        line-height: 28px;
+    }
+    .goToNotice {
+        width: 350px;
+        font-size: 20px;
+        line-height: 21px;
+        text-align: center;
+        margin-top: 24px;
+        color: grey;
+    }
 </style>
 
 
@@ -10,6 +48,13 @@
 
 {% block body %}
 <div id="main">
-    
+    <div class="connectedSpace">
+        <h1>EmoCA</h1>
+        <h2>감성추론을 기반으로 하는 인공지능 챗봇 입니다. <br>EmoCA와 함께 행복한 대화를 할 수 있습니다.</h2>
+    </div>
+    <div class="getStarted">
+        <a class="getStartedApp withSpecDemo" href="https://app.zeplin.io/register">모바일 앱으로 바로가기</a>
+        <a href="/notice/lists/" class="goToNotice visible">공지사항 보러가기 →</a>
+    </div>
 </div>
 {% endblock %}
