@@ -25,45 +25,45 @@
                 <p v-model="message" style="display:none;">{{message}}</p>
             {% endfor %}
         {% endif %}
-        <button onClick="location.href='/notice/create/'">글쓰기</button>
-        <br>
-    
-        {% for post in contents %}
-            {{ post.title }} : {{ post.content}}
-            {{ post.created_at }}
-        {% endfor %}
-        <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
-        <thead>
-            <tr>
-            <th class="th-sm">번호</th>
-            <th class="th-sm">제목</th>
-            <th class="th-sm">내용</th>
-            <th class="th-sm">날짜</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for post in contents %}
-                <tr>
-                <td>{{ post.id }}</td>
-                <td>{{ post.title }}</td>
-                <td>{{ post.content }}</td>
-                <td>{{ post.created_at }}</td>
-                </tr>
-            {% endfor %}
-            
-        </tbody>
-        
-        </table>
-        <nav aria-label="...">
-            <ul class="pagination pagination-sm">
-                {% for count in contents.length %}
-                {{ count }}
-                <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                {% endfor %}
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="row justify-content-end mb-5">
+                <button type="button" class="btn btn-light" onClick="location.href='/notice/create/'">글쓰기</button>
+            </div>
+            <div class="row">
+                <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                    <th class="th-sm">번호</th>
+                    <th class="th-sm">제목</th>
+                    <th class="th-sm">내용</th>
+                    <th class="th-sm">날짜</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for post in contents %}
+                        <tr>
+                        <td>{{ post.id }}</td>
+                        <td>{{ post.title }}</td>
+                        <td>{{ post.content }}</td>
+                        <td>{{ post.created_at }}</td>
+                        </tr>
+                    {% endfor %}
+                    
+                </tbody>
+                
+                </table>
+                <nav aria-label="...">
+                    <ul class="pagination pagination-sm">
+                        {% for count in contents.length %}
+                        {{ count }}
+                        <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
