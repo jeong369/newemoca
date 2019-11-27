@@ -8,6 +8,8 @@ urlpatterns = [
     path('', views.main, name="main"),
     path('lists/', views.lists, name="noticelists"),
     path('create/', views.create, name="noticecreate"),
+    path('detail/<int:info_pk>/', views.detail, name="noticedetail"),
+    path('about/', views.about),
     
     # API Link
     # path('user/', views.UserGetSerializer),

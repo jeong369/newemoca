@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block style %} 
+<style>
+    #detail {
+
+    }
+    .container {
+        margin-top: 50px;
+;
+    }
+    .row {
+        margin-top: 10px;
+    }
+</style>
+
+
+{% endblock %}
+
+{% block body %}
+    <div id="detail">
+        <div class="container">
+            <h1></h1>
+            <thead>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td>번호</td>
+                    <td>{{ post.id }}</td>
+                </tr>
+                <tr>
+                    <td>제목</td>
+                    <td>{{ post.title }}</td>
+                </tr>
+                <td>{{ post.content }}</td>
+                <td>{{ post.created_at }}</td>
+                </tr>
+
+            </tbody>
+
+        </div>
+            
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+{% endblock %}

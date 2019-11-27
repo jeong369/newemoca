@@ -10,10 +10,20 @@ def main(request) :
     
     return render(request, 'notice/main.html')
 
+def about(request) :
+    return render(request, 'notice/about.html')
+
 def lists(request) :
     contents = Info.objects.all()
-    context = {'contents' : contents}
+    contents_length = str(len(contents))
+    print(contents_length)
+    context = {'contents' : contents, 'contents_length' : contents_length}
     return render(request, 'notice/list.html', context)
+
+def detail(request, info_pk) :
+    info = get_object_or_404(Info, pk=info_pk)
+    context = {'post':info}
+    return render(request, 'notice/detail.html', context)
 
 @require_http_methods(['POST', 'GET'])
 def create(request) :
