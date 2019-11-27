@@ -65,14 +65,16 @@
 
             <nav aria-label="Page navigation example">
                 <ul class="pagination pagination-sm">
-                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    
-                    {% if contents|length == 11 %}
+                    <li class="page-item"><a class="page-link" href="#" @click="previous">Previous</a></li>
+                   
+                    {% for count in contents_length %}
+                        <li class="page-item"><a class="page-link" href="#" @click="listchange({{ count }})">{{ count }}</a></li>
+                    {% endfor %}
+                    <!-- {% if contents|length == 11 %}
                     <p>dd</p>
-                    {% endif %}
+                    {% endif %} -->
                     
-                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    <li class="page-item"><a class="page-link" href="#" @click="next({{pagecount}})">Next</a></li>
                 </ul>
             </nav>
         </div>
@@ -82,6 +84,7 @@
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
     <script>
+        
         var noticeapp = new Vue({
             el: '#notice',
             delimiters: ['[[', ']]'],
@@ -89,17 +92,35 @@
                 message : ''
             },
             methods : {
+                listchange(pagenum) {
+                    location.href=`/notice/lists/${pagenum}`
+                },
+                previous() {
+                    var url = window.location.href
+                    var url2 = url.split('http://127.0.0.1:8000/notice/lists/')[1]
+                    url2 = url2.split('/')[0]
+                    url2 *= 1
+                    if (url2 > 1) {
+                        url2 -= 1
+                    }
+                    location.href=`/notice/lists/${url2}`
+                },
+                next(pagecount) {
+                    var url = window.location.href
+                    var url2 = url.split('http://127.0.0.1:8000/notice/lists/')[1]
+                    url2 = url2.split('/')[0]
+                    url2 *= 1
+                    if (url2 < pagecount) {
+                        url2 += 1
+                    }
+                    location.href=`/notice/lists/${url2}`
+                }
             },
             mounted() {
                 if (this.message) {
                         alert(this.message)
                     }
-                /* {% for count in contents_length %}
-                    <li class="page-item"><a class="page-link" href="#">{{count}}</a></li>
-                    {% endfor %} */
             }
         })
-
-
     </script>
 {% endblock %}

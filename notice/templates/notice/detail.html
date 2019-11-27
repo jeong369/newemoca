@@ -12,6 +12,9 @@
     .row {
         margin-top: 10px;
     }
+    td {
+        margin-right: 10px;
+    }
 </style>
 
 
@@ -25,6 +28,7 @@
 
             </thead>
             <tbody>
+                <table>
                 <tr>
                     <td>번호</td>
                     <td>{{ post.id }}</td>
@@ -33,12 +37,17 @@
                     <td>제목</td>
                     <td>{{ post.title }}</td>
                 </tr>
-                <td>{{ post.content }}</td>
-                <td>{{ post.created_at }}</td>
+                <tr>
+                    <td>내용</td>
+                    <td>{{ post.content }}</td>
                 </tr>
-
+                <tr>
+                    <td>작성시간</td>
+                    <td>{{ post.created_at }}</td>
+                </tr>
+                </table>
             </tbody>
-
+            <a class="page-link" href="#" @click="back">뒤로가기</a>
         </div>
             
 
@@ -48,4 +57,20 @@
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
+    <script>
+        var noticeapp = new Vue({
+            el: '#detail',
+            methods : {
+                back() {
+                    var url = window.location.href
+                    var url2 = url.split('http://127.0.0.1:8000/notice/detail/')[1]
+                    url2 = url2.split('/')[0]
+                    url2 *= 1
+                    url2 = Math.ceil(url2 / 10)
+                    console.log(url2)
+                    location.href=`/notice/lists/${url2}/`
+                }
+            }
+        })
+    </script>
 {% endblock %}
