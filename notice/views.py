@@ -55,12 +55,11 @@ def create(request) :
             info_form = CreateForm(request.POST)
             print(info_form)
             if info_form.is_valid() :
+                print('dkdk')
                 info = info_form.save(commit=False)
                 info.title = request.POST.get('title')
                 info.content = request.POST.get('content')
                 info = info.save()
-            
-
                 return redirect('notice:noticelists', 1)
 
         return render(request, 'notice/create.html')

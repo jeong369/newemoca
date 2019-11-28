@@ -58,7 +58,7 @@
                     {% for post in contents %}
                     <tr id="line_{{post.id}}">
                         <td>{{ forloop.counter }}</td>
-                        {% if post.available == 0 %}
+                        {% if post.available == 1 %}
                             <td id="title_{{post.id}}"><a href="{% url 'notice:noticedetail' post.pk %}">{{ post.title }}</a></td>
                         {% else %}
                             <td id="title_{{post.id}}"><p>{{ post.title }}</p></td>
@@ -79,7 +79,7 @@
                     <li class="page-item"><a class="page-link" href="#" @click="previous">Previous</a></li>
                    
                     {% for count in contents_length %}
-                        <li class="page-item"><a class="page-link" href="#" @click="listchange({{ count }})">{{ count }}</a></li>
+                        <li id="page-{{count}}" class="page-item"><a class="page-link" href="#" @click="listchange({{ count }})">{{ count }}</a></li>
                     {% endfor %}
                     <!-- {% if contents|length == 11 %}
                     <p>dd</p>

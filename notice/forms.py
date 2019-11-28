@@ -5,5 +5,5 @@ from .models import Info
 class CreateForm(forms.ModelForm):
     class Meta:
         model = Info
-        fields = '__all__'
+        fields = ['title', 'content',]
     

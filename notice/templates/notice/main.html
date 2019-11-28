@@ -3,16 +3,15 @@
 {% block style %} 
 <style>
     #main {
-        width:90%;height:500px;
-        background-image:url();
-        background-repeat:no-repeat;
-        background-position:top center;
-        background-size:auto;
+        width:100%
+        margin-left: 50px;
+        margin-right: 50px;
     }
     .connectedSpace {
-        margin-top: 61px;
+        margin-top: 10rem;
         text-align: center;
-        padding: 0 24px;
+        vertical-align: middle;
+        
     }
     .getStarted {
         margin-top : 84px;
@@ -21,7 +20,7 @@
         align-items: center;
         position: relative;
     }
-    .getStartedApp {
+    /* .getStartedApp {
         width: 350px;
         height: 60px;
         padding: 16px;
@@ -32,7 +31,7 @@
         color: white;
         text-align: center;
         line-height: 28px;
-    }
+    } */
     .goToNotice {
         width: 350px;
         font-size: 20px;
@@ -40,6 +39,19 @@
         text-align: center;
         margin-top: 24px;
         color: grey;
+    }
+    img {
+        /* display: block;
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        bac */
+        background-position: center;
+        max-width: 1000px;
+        /* opacity: 0.5; */
+    }
+    .emoca_intro {
+        margin-top: 20px;
     }
 </style>
 
@@ -49,13 +61,13 @@
 {% block body %}
 <div id="main">
     {% load static %}
-    <img src="{% static 'notice/images/bg-1.jpg' %}">
     <div class="connectedSpace">
-        <h1>EmoCA</h1>
-        <h2>감성추론을 기반으로 하는 인공지능 챗봇 입니다. <br>EmoCA와 함께 행복한 대화를 할 수 있습니다.</h2>
+        <img src="{% static 'notice/images/group@2x_1.png' %}">
+        <!-- <h1>EmoCA</h1> -->
+        <h3 class="emoca_intro">감성추론을 기반으로 하는 인공지능 챗봇 입니다. <br>EmoCA와 함께 행복한 대화를 할 수 있습니다.</h3>
     </div>
     <div class="getStarted">
-        <a class="getStartedApp withSpecDemo" href="https://app.zeplin.io/register">모바일 앱으로 바로가기</a>
+        <!-- <a class="getStartedApp withSpecDemo" href="https://app.zeplin.io/register">모바일 앱으로 바로가기</a> -->
         <a href="/notice/lists/1" class="goToNotice visible">공지사항 보러가기 →</a>
     </div>
 </div>
