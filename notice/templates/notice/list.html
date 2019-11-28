@@ -16,9 +16,12 @@
     }
     .th-sm {
         text-align: center;
+        vertical-align: middle;
+        width:fit-content;
     }
     td {
         text-align: center;
+        vertical-align: middle;
     }
 </style>
 
@@ -44,16 +47,24 @@
                 <thead>
                     <tr>
                         <th class="th-sm" style="width:5%">번호</th>
-                        <th class="th-sm" style="width:70%">제목</th>
-                        <th class="th-sm" style="width:25%">날짜</th>
+                        <th class="th-sm" >제목</th>
+                        <th class="th-sm" style="width:15%">날짜</th>
+                        {% if request.user.is_staff %}
+                            <th class="th-sm" style="width:5%">공개여부</th>
+                        {% endif %}
                     </tr>
                 </thead>
                 <tbody>
                     {% for post in contents %}
-                    <tr>
-                        <td>{{ post.id }}</td>
-                        <td><a href="{% url 'notice:noticedetail' post.id %}">{{ post.title }}</a></td>
+                    <tr id="line_{{post.id}}">
+                        <td>{{ forloop.counter }}</td>
+                        {% if post.available == 0 %}
+                            <td id="title_{{post.id}}"><a href="{% url 'notice:noticedetail' post.pk %}">{{ post.title }}</a></td>
+                        {% else %}
+                            <td id="title_{{post.id}}"><p>{{ post.title }}</p></td>
+                        {% endif %}
                         <td>{{ post.created_at }}</td>
+                        <td><i v-on:click="oxdefine({{post.id}})" class="{% if post.available == 0 %} far fa-circle {% else %} fas fa-times {% endif %} fa-lg ox-button-{{post.id}}" style="color:black;"></i></td>
                     </tr>
                     {% endfor %}
                     
@@ -83,13 +94,14 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script>
-        
         var noticeapp = new Vue({
             el: '#notice',
             delimiters: ['[[', ']]'],
             data: {
-                message : ''
+                message : '',
+                href: '',
             },
             methods : {
                 listchange(pagenum) {
@@ -114,7 +126,34 @@
                         url2 += 1
                     }
                     location.href=`/notice/lists/${url2}`
+                },
+                oxdefine(id) {
+                    console.log(id)
+                    const oxbutton = document.querySelector(`.ox-button-${id}`)
+                    const title = document.querySelector(`#title_${id}`)
+                    console.log(oxbutton, title)
+                    axios.get(`/notice/lists/${id}/available/`)
+                        .then(function(response) {
+                            if (response.data['is_ox'] == 0) {
+                                oxbutton.classList.remove('fa-times')
+                                oxbutton.classList.remove('fas')
+                                oxbutton.classList.add('fa-circle')
+                                oxbutton.classList.add('far')
+                                title.innerHTML = `<p>${response.data['info_title']}</p>`
+
+                            } else {
+                                oxbutton.classList.remove('fa-circle')
+                                oxbutton.classList.remove('far')
+                                oxbutton.classList.add('fa-times')
+                                oxbutton.classList.add('fas')
+                                title.innerHTML = `<a href="/notice/detail/${id}">${response.data['info_title']}</a>`
+                            }
+                        })
+                },
+                movedetail(id) {
+                    console.log(id)
                 }
+            
             },
             mounted() {
                 if (this.message) {
