@@ -13,6 +13,10 @@
     .submitBtn {
         text-align: center;
     }
+    #post p {
+      color: grey;
+      opacity: 0.7;
+    }
 </style>
 
 
@@ -31,8 +35,9 @@
         <input type="textarea" name="content">
         <br>
 
-        <label><b>available : </b></label>
-        <input type="textarea" name="available">
+        <label><b>공개여부 : </b></label>
+        <input type="textarea" name="available" value="1">
+        <p>공개 시 1, 안할 시 0을 작성해주세요.</p>
         <br>
 
         <div class="submitBtn">
