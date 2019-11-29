@@ -59,12 +59,16 @@ def create(request) :
                 info = info_form.save(commit=False)
                 info.title = request.POST.get('title')
                 info.content = request.POST.get('content')
+                info.available = request.POST.get('available')
                 info = info.save()
                 return redirect('notice:noticelists', 1)
 
         return render(request, 'notice/create.html')
 
-
+def delete(request, info_pk) :
+    info = get_object_or_404(Info, pk=info_pk)
+    info.delete()
+    return render(request, 'notice:noticelists', 1)
 
 # API
 @api_view(['GET'])
