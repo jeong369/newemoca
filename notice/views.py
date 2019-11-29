@@ -68,7 +68,7 @@ def create(request) :
 def delete(request, info_pk) :
     info = get_object_or_404(Info, pk=info_pk)
     info.delete()
-    return render(request, 'notice:noticelists', 1)
+    return redirect('notice:noticelists', 1)
 
 # API
 @api_view(['GET'])

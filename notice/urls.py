@@ -10,6 +10,7 @@ urlpatterns = [
     path('create/', views.create, name="noticecreate"),
     path('detail/<int:info_pk>/', views.detail, name="noticedetail"),
     path('lists/<int:page_pk>/available/', views.ox, name="noticeox"),
+    path('delete/<int:info_pk>/', views.delete, name="noticedelete"),
     path('about/', views.about),
     
     # API Link

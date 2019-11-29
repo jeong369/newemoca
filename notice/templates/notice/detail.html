@@ -24,6 +24,9 @@
     <div id="detail">
         <div class="container">
             <h1></h1>
+            {% if request.user.is_staff %}
+            <button type="button" class="btn btn-secondary"><a href="{% url 'notice:noticedelete' post.id %}">삭제</a></button>
+            {% endif %}
             <thead>
 
             </thead>
@@ -69,7 +72,8 @@
                     url2 = Math.ceil(url2 / 10)
                     console.log(url2)
                     location.href=`/notice/lists/${url2}/`
-                }
+                },
+            
             }
         })
     </script>
