@@ -16,6 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.contrib.auth.decorators import login_required
+from django.conf import settings
+from django.conf.urls.static import static
 
 # swagger import
 from drf_yasg import openapi
@@ -50,3 +52,6 @@ urlpatterns = [
     path('admin/api/doc/', login_required(schema_admin_view.with_ui('swagger', cache_timeout=0)), name='schema-swagger-ui'),
     path('admin/api/doc/redoc/', login_required(schema_admin_view.with_ui('redoc', cache_timeout=0)), name='schema-redoc'),
 ]
+
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

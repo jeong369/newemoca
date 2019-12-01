@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.views.decorators.http import require_http_methods
 from django.contrib import messages
 from django.http import JsonResponse
+from django.core.files.storage import FileSystemStorage
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from math import ceil
@@ -28,20 +29,26 @@ def lists(request, page_pk) :
 
 def ox(request, page_pk) :
     info = get_object_or_404(Info, pk=page_pk)
-    print(info.available)
-    if info.available == 0 :
-        info.available = 1
+    print(type(info.available))
+    if info.available == '0' :
+        info.available = '1'
         info.save()
     else :
-        info.available = 0
+        info.available = '0'
         info.save()
     print(info.available)
     return JsonResponse({'is_ox' : info.available, 'info_title': info.title})
 
 def detail(request, info_pk) :
     info = get_object_or_404(Info, pk=info_pk)
+    # myfile = info.file
+    # fs = FileSystemStorage()
+    # filename = fs.save(myfile.name, myfile)
+    # uploaded_file_url = fs.url(filename)
+    # 'uploaded_file_url' : uploaded_file_url
     context = {'post':info}
     return render(request, 'notice/detail.html', context)
+
 
 @require_http_methods(['POST', 'GET'])
 def create(request) :
@@ -52,18 +59,31 @@ def create(request) :
     else :
         if request.method == "POST" :
             print(request.POST)
-            info_form = CreateForm(request.POST)
+            info_form = CreateForm(request.POST, request.FILES)
             print(info_form)
             if info_form.is_valid() :
                 print('dkdk')
                 info = info_form.save(commit=False)
+                print(info)
                 info.title = request.POST.get('title')
                 info.content = request.POST.get('content')
                 info.available = request.POST.get('available')
-                info = info.save()
-                return redirect('notice:noticelists', 1)
+                info.file = request.FILES.get('file')
+                infom = info.save()
+                print(info.title)
 
-        return render(request, 'notice/create.html')
+                getinfo = get_object_or_404(Info, title=info.title, content=info.content, available=info.available, file=info.file)
+                print(getinfo)
+
+                # myfile = request.FILES.get('file')
+                # fs = FileSystemStorage()
+                # filename = fs.save(myfile.name, myfile)
+                # uploaded_file_url = fs.url(filename)
+                # context = {'uploaded_file_url' : uploaded_file_url}
+                return redirect('/notice/detail/{}'.format(getinfo.pk))
+        post_form = CreateForm()
+        context = {'post_form':post_form}
+        return render(request, 'notice/create.html', context)
 
 def delete(request, info_pk) :
     info = get_object_or_404(Info, pk=info_pk)

@@ -58,13 +58,13 @@
                     {% for post in contents %}
                     <tr id="line_{{post.id}}">
                         <td>{{ forloop.counter }}</td>
-                        {% if post.available == 1 %}
+                        {% if post.available == '1' %}
                             <td id="title_{{post.id}}"><a href="{% url 'notice:noticedetail' post.pk %}">{{ post.title }}</a></td>
                         {% else %}
                             <td id="title_{{post.id}}"><p>{{ post.title }}</p></td>
                         {% endif %}
                         <td>{{ post.created_at }}</td>
-                        <td><i v-on:click="oxdefine({{post.id}})" class="{% if post.available == 0 %} far fa-circle {% else %} fas fa-times {% endif %} fa-lg ox-button-{{post.id}}" style="color:black;"></i></td>
+                        <td><i v-on:click="oxdefine({{post.id}})" class="{% if post.available == '0' %} far fa-circle {% else %} fas fa-times {% endif %} fa-lg ox-button-{{post.id}}" style="color:black;"></i></td>
                     </tr>
                     {% endfor %}
                     
@@ -134,7 +134,7 @@
                     console.log(oxbutton, title)
                     axios.get(`/notice/lists/${id}/available/`)
                         .then(function(response) {
-                            if (response.data['is_ox'] == 0) {
+                            if (response.data['is_ox'] == '0') {
                                 oxbutton.classList.remove('fa-times')
                                 oxbutton.classList.remove('fas')
                                 oxbutton.classList.add('fa-circle')

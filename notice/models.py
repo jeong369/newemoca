@@ -7,4 +7,8 @@ class Info(models.Model) :
 	# user = models.ForeignKey(User, on_delete=models.CASCADE)
 	created_at = models.DateTimeField(auto_now_add=True)
 	updated_at = models.DateTimeField(auto_now=True)
-	available = models.IntegerField(default=1)
+	available = models.CharField(max_length=1, choices=(
+        ('1', '공개'),
+		('0', '비공개'),
+    ))
+	file = models.FileField(null=True)

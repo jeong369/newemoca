@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block style %} 
 <style>
     #detail {
@@ -39,6 +39,10 @@
                 <tr>
                     <td>제목</td>
                     <td>{{ post.title }}</td>
+                </tr>
+                <tr>
+                    <td>첨부파일</td>
+                    <td><a id="id_upload_file" href="{{post.file.url}}" download>{{ post.file }}</a></td>
                 </tr>
                 <tr>
                     <td>내용</td>
