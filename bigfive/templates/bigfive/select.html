@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block style %}
+<style>
+    #bigfiveselect {
+        width:100%;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+</style>
+{% endblock %}
+
+{% block body %}
+<div id="bigfiveselect">
+    <h1>[[ username ]]님, 환영합니다. <br>설문을 선택해주세요.</h1>
+    <div class="row" style="">
+        <button v-on:click="gotest(10)">매우 간단한 12문항</button>
+        <button v-on:click="gotest(50)">간단한 50문항</button>
+        <button v-on:click="gotest(100)">무난한 100문항</button>
+        <button v-on:click="gotest(120)">정확한 120문항</button>
+        <button v-on:click="gotest(300)">매우 정확한 300문항</button>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    var selectapp = new Vue({
+        el: '#bigfiveselect',
+        delimiters: ['[[', ']]'],
+        data : {
+            username : window.sessionStorage['username']
+        },
+        methods : {
+            gotest(number) {
+                var url = `/bigfive/select/${number}`;
+                location.href = url
+                // axios.get(url)
+                //     .then(function(response) {
+                //         console.log(response)
+                //     })
+                
+            },
+        
+        }
+    })
+</script>
+{% endblock %}

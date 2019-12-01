@@ -1,6 +1,7 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from .models import User
 from .forms import CreateForm
+
 # serailizers
 from .serializers import UserSerializer, SearchUserSerializer
 from rest_framework.decorators import api_view
@@ -21,7 +22,11 @@ def create(request) :
             user.age = request.POST.get('age')
             user.gender = request.POST.get('gender')
             user = user.save()
-        return render(request, 'accounts/create.html')
+
+            nowuser = get_object_or_404(User, name=request.POST.get('name'), age=request.POST.get('age'), gender=request.POST.get('gender'))
+
+            # context = {'nowuser' : nowuser}
+            return redirect('bigfive:bigfiveselect')
     
     return render(request, 'accounts/create.html')
 
