@@ -21,9 +21,11 @@ def about(request) :
 
 def lists(request, page_pk) :
     contents = Info.objects.all().order_by('-created_at')
+    print(contents)
     pagecount = ceil(len(contents)/10)
     contents_length = [x+1 for x in range(pagecount)]
     contents = contents[(page_pk-1)*10:page_pk*10]
+    print(contents)
     context = {'contents' : contents, 'contents_length' : contents_length, 'pagecount' : pagecount}
     return render(request, 'notice/list.html', context)
 

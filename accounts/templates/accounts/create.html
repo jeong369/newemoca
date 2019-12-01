@@ -21,7 +21,10 @@
     label {
         width: 100px;
     }
-    .sign_in_up_input {
+    .sign_in_up_input_age {
+        width : 500px;
+    }
+    .sign_in_up_input_name {
         width : 500px;
     }
     .submitBtn {
@@ -42,21 +45,21 @@
         
         <div class="row">
             <label class="label" for="nickname"><b>닉네임</b></label>
-            <input class="sign_in_up_input" type="text" placeholder="당신만의 닉네임을 적어주세요." name="name" required>
+            <input class="sign_in_up_input_name" type="text" placeholder="당신만의 닉네임을 적어주세요." name="name" required>
             <br>
         </div>
 
         <div class="row">
             <label class="label" for="age"><b>나이</b></label>
-            <input class="sign_in_up_input" type="text" placeholder="만 20세 이상부터 가능합니다. 나이를 적어주세요." name="age" required>
+            <input class="sign_in_up_input_age" type="text" placeholder="만 20세 이상부터 가능합니다. 나이를 적어주세요." name="age" required>
             <br>
         </div>
 
         <div class="row">
             <label class="label" for="gender"><b>성별</b></label>
-            <input style="margin-top:10px;margin-bottom:10px" type="radio" name="gender" value="m" required>남성 &nbsp;
-            <input style="margin-top:10px;margin-bottom:10px" type="radio" name="gender" value="f" required>여성 &nbsp;
-            <input style="margin-top:10px;margin-bottom:10px" type="radio" name="gender" value="o" required>기타<br>
+            <input class="sign_in_up_input_gender" style="margin-top:10px;margin-bottom:10px" type="radio" name="gender" value="m" required>남성 &nbsp;
+            <input class="sign_in_up_input_gender" style="margin-top:10px;margin-bottom:10px" type="radio" name="gender" value="f" required>여성 &nbsp;
+            <input class="sign_in_up_input_gender" style="margin-top:10px;margin-bottom:10px" type="radio" name="gender" value="o" required>기타<br>
         </div>
   
   
@@ -67,4 +70,26 @@
       </div>
     </form>
 </div>
+<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+    $(".sign_in_up_input_name").change(function(){
+        //실행할 내용
+        var name = document.querySelector('.sign_in_up_input_name').value
+        window.sessionStorage.setItem('username', name)
+        console.log(window.sessionStorage)
+    });
+    $(".sign_in_up_input_age").change(function(){
+        //실행할 내용
+        var age = document.querySelector('.sign_in_up_input_age').value
+        window.sessionStorage.setItem('userage', age)
+        console.log(window.sessionStorage)
+    });
+    $(".sign_in_up_input_gender").change(function(){
+        //실행할 내용
+        var gender = document.querySelector('.sign_in_up_input_gender:checked').value
+        window.sessionStorage.setItem('usergender', gender)
+        console.log(window.sessionStorage)
+    });
+
+</script>
 {% endblock %}

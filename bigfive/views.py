@@ -1,3 +1,45 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
+from accounts.models import User
+from accounts.forms import UserCreationForm
+from .models import OTest, CTest, ETest, ATest, NTest
 
 # Create your views here.
+# 1. main
+def index(request) :
+    return render(request, 'bigfive/main.html')
+
+# 2. 유저 정보 받기(getuser.html)) - account.create
+
+
+# 3. 설문 고르기(selecttest.html)
+def select(request) :
+    return render(request, 'bigfive/select.html')
+
+# 4. 각 설문에 해당하는 질문 넘기기
+def gettest(request, test_num) :
+    print(test_num, type(test_num))
+
+    # db test에 OCEAN을 저장해놓고 불러와서 score랑 매칭
+    # 1) TEST 모두 저장 
+    # 2) pk별로 저장 될 model(test_pk, score, user_pk)
+
+    # 12문항
+    testlists = []
+    # 50, 100개 랜덤으로 뽑기 문항
+    testlists = []
+    # 120, 300개 랜덤으로 뽑기 문항
+    testlists = []
+
+    
+    context = {'test_lists' : testlists}
+    return render(request, 'bigfive/test.html', context)
+
+# 4. 각 설문 문항 저장
+def savescore(request, test_pk, score_grade) :
+
+    # 저장 True/False 결과만 보내주면 됨.
+    # 즉, serializers.data
+    return HttpResponse('ok')
+
+
+# 5. 

@@ -5,7 +5,7 @@ app_name = 'accounts'
 
 urlpatterns = [
     # app
-    path('create/', views.create),
+    path('create/', views.create, name="accountscreate"),
     
     # API Link
     path('user/', views.UserGetSerializer),
