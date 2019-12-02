@@ -11,4 +11,4 @@ class Info(models.Model) :
         ('1', '공개'),
 		('0', '비공개'),
     ))
-	file = models.FileField(null=True)
+	file = models.FileField(null=True, blank=True)

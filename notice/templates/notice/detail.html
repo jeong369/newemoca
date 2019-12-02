@@ -42,7 +42,11 @@
                 </tr>
                 <tr>
                     <td>첨부파일</td>
+                    {% if post.file %}
                     <td><a id="id_upload_file" href="{{post.file.url}}" download>{{ post.file }}</a></td>
+                    {% else %}
+                    <td><p>x</p></td>
+                    {% endif %}
                 </tr>
                 <tr>
                     <td>내용</td>
@@ -54,6 +58,7 @@
                 </tr>
                 </table>
             </tbody>
+            <input type=button value="Previous Page" onClick="javascript:history.go(-1);">
             <a class="page-link" href="#" @click="back">뒤로가기</a>
         </div>
             
