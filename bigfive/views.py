@@ -1,7 +1,7 @@
 from django.shortcuts import render, HttpResponse
 from accounts.models import User
 from accounts.forms import UserCreationForm
-from .models import OTest, CTest, ETest, ATest, NTest
+from .models import Test, Score, Adjective
 
 # Create your views here.
 # 1. main

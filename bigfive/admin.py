@@ -1,9 +1,7 @@
 from django.contrib import admin
-from .models import OTest, CTest, ETest, ATest, NTest
+from .models import Test, Score, Adjective
 
 # Register your models here.
-admin.site.register(OTest)
-admin.site.register(CTest)
-admin.site.register(ETest)
-admin.site.register(ATest)
-admin.site.register(NTest)
+admin.site.register(Test)
+admin.site.register(Score)
+admin.site.register(Adjective)
