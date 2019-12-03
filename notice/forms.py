@@ -11,7 +11,7 @@ class CreateForm(forms.ModelForm):
         widgets = {
             'title' : forms.TextInput(
                 attrs = {'class' : 'form-cotrol', 'style':'width: 100%', 
-                            'placeholder': '제목을 입력하세요.'},
+                            'placeholder': '제목을 입력하세요.', 'maxlength': '100'},
             ),
             'availabel' : forms.Select(
                 attrs={'class':'custom-select'},
