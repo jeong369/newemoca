@@ -7,20 +7,47 @@
         margin-left: 50px;
         margin-right: 50px;
     }
+    #collection {
+        display: block;
+    }
+    #bigfivetest .answer {
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: 5px 0 5px;
+        
+        font-size:1em;
+        /* pointer-events: none; */
+    }
+    .answer:hover {
+        cursor: pointer;
+        background-color: skyblue;
+        color : black;
+    }
 </style>
 {% endblock %}
 
 {% block body %}
 <div id="bigfivetest">
-    <h1></h1>
+    <h1>bigfive 설문</h1>
     <div class="row" style="">
-        {% for test in test_lists %}
-            
-            <p>{{ test.question }}</p>
-            <label>
+        <ul id="collection">
+            {% for test in test_lists %}
+                <li id="q{{forloop.counter}}" style="display:list-item">
+                    <div class="qeustion_wrapper">
+                        <div class="question_{{test.pk}}">
+                            {{ test.question }}
+                        </div>
+                        <div class="answer" value="1" v-on:click="keepscore({{test.pk}}, {{forloop.counter}}, 1)">전혀 그렇지 않다.</div>
+                        <div class="answer" value="2" v-on:click="keepscore({{test.pk}}, {{forloop.counter}}, 2)">그렇지 않다.</div>
+                        <div class="answer" value="3" v-on:click="keepscore({{test.pk}}, {{forloop.counter}}, 3)">보통이다.</div>
+                        <div class="answer" value="4" v-on:click="keepscore({{test.pk}}, {{forloop.counter}}, 4)">약간 그렇다.</div>
+                        <div class="answer" value="5" v-on:click="keepscore({{test.pk}}, {{forloop.counter}}, 5)">매우 그렇다.</div>
+                    </div>
+                </li>
                 
-            </label>
-        {% endfor %}
+            {% endfor %}
+
+        </ul>
     </div>
 </div>
 
@@ -36,7 +63,14 @@
             username : window.sessionStorage['username']
         },
         methods : {
-            
+            keepscore(test_pk, idx, value) {
+                console.log("들어옴")
+                console.log(test_pk, idx, value)
+                // 다른거 안보이기
+                
+                // 점수 저장하기
+
+            },
         
         }
     })

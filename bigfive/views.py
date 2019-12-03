@@ -15,6 +15,15 @@ def index(request) :
 def select(request) :
     return render(request, 'bigfive/select.html')
 
+# query set > list
+def makefor(q) :
+    q_list = []
+    for i in q :
+        print(i)
+        q_list.append(i)
+    return q_list
+
+
 # 4. 각 설문에 해당하는 질문 넘기기
 def gettest(request, test_num) :
     print(test_num, type(test_num))
@@ -24,11 +33,16 @@ def gettest(request, test_num) :
     # 2) pk별로 저장 될 model(test_pk, score, user_pk)
 
     # 12문항
-    testlists = []
+    if test_num == 12 :
+        tests = Test.objects.filter(facet=12)
+        print(tests)
+        testlists = makefor(tests)
     # 50, 100개 랜덤으로 뽑기 문항
-    testlists = []
+    elif test_num == 50 or test_num == 100 :
+        testlists = []
     # 120, 300개 랜덤으로 뽑기 문항
-    testlists = []
+    elif test_num == 120 or test_num == 300 :
+        testlists = []
 
     
     context = {'test_lists' : testlists}
