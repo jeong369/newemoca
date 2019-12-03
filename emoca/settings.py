@@ -40,11 +40,15 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_swagger',
     'drf_yasg',
+    'ckeditor',
+    'ckeditor_uploader',
     'accounts',
     'bigfive',
     'notice',
 
 ]
+
+CKEDITOR_UPLOAD_PATH = "uploads/"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

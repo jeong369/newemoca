@@ -45,6 +45,7 @@ urlpatterns = [
     path('accounts/', include('accounts.urls')),
     path('bigfive/', include('bigfive.urls')),
     path('notice/', include('notice.urls')),
+    path('ckeditor/', include('ckeditor_uploader.urls')),
 
 
 

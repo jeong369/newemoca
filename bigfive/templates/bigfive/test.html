@@ -35,7 +35,7 @@
                 <li id="q{{forloop.counter}}" style="display:list-item">
                     <div class="qeustion_wrapper">
                         <div class="question_{{test.pk}}">
-                            {{ test.question }}
+                            <b>{{ test.question }}</b>
                         </div>
                         <div class="answer" value="1" v-on:click="keepscore({{test.pk}}, {{forloop.counter}}, 1)">전혀 그렇지 않다.</div>
                         <div class="answer" value="2" v-on:click="keepscore({{test.pk}}, {{forloop.counter}}, 2)">그렇지 않다.</div>

@@ -84,6 +84,7 @@ def create(request) :
                 # context = {'uploaded_file_url' : uploaded_file_url}
                 return redirect('/notice/detail/{}'.format(getinfo.pk))
         post_form = CreateForm()
+        print(post_form)
         context = {'post_form':post_form}
         return render(request, 'notice/create.html', context)
 

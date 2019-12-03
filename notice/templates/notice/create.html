@@ -10,6 +10,11 @@
 
 
     }
+    .createdspace {
+      margin-top: 5rem;
+      text-align: center;
+      vertical-align: middle;
+    }
     .submitBtn {
         text-align: center;
     }
@@ -26,8 +31,49 @@
 <div id="post">
     <form class="modal-contentsignup" action="/notice/create/" method="POST" enctype="multipart/form-data">
       {% csrf_token %}
-      {{post_form.as_p}}
-      <!-- <h1 style="text:bold;text-align:center">POST</h1>
+      <div class="createdspace">
+          {{ post_form.media }}
+          {{post_form.as_p}}
+
+        <!-- <tr>
+          <th>
+            <label for="id_title">제목:</label>
+          </th>
+          <td>
+            <input type="text" name="title" maxlength="100" required id="id_title"><br>
+            <span class="helptext">최대 100자 내로 입력해주세요</span>
+          </td>
+        </tr>
+        <tr>
+          <th>
+            <label for="id_content"></label>
+          </th>
+          <td>
+            <textarea name="content" cols="40" rows="10" required id="id_content"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <th>
+            <label for="id_available">공개여부:</label>
+          </th>
+          <td>
+            <select name="available" required id="id_available">      
+              <option value="1" selected>공개</option>
+              <option value="0">비공개</option>
+              
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>
+            <label for="id_file">파일 첨부</label>
+          </th>
+          <td>
+            <input type="file" name="file" id="id_file">
+          </td>
+        </tr> -->
+      </div>
+        <!-- <h1 style="text:bold;text-align:center">POST</h1>
         <label class="label" for="title"><b>제목 : </b></label>
         <input type="text" name="title">
         <br>
