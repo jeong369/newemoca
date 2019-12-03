@@ -5,7 +5,7 @@ from ckeditor_uploader.fields import RichTextUploadingField
 
 # Create your models here.
 class Info(models.Model) :
-	title = models.CharField(max_length=100, help_text='최대 100자 내로 입력해주세요')
+	title = models.CharField(max_length=100)
 	content = RichTextUploadingField()
 	# user = models.ForeignKey(User, on_delete=models.CASCADE)
 	created_at = models.DateTimeField(auto_now_add=True)
@@ -14,4 +14,4 @@ class Info(models.Model) :
         ('1', '공개'),
 		('0', '비공개'),
     ))
-	file = models.FileField(null=True, blank=True)
+	file = models.FileField(null=True)

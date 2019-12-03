@@ -6,15 +6,29 @@
         width:100%;
         margin-left: 50px;
         margin-right: 50px;
+    }
+    #bigfivemain .row {
+        display: flex;
     }    
-
+    .startBtn {
+        margin-left: 45%;
+        margin-right: 45%;
+        /* text-align: center; */
+        border-radius: 5px;
+    }
+    .startBtn:hover {
+        background-color: skyblue;
+    }
 </style>
 {% endblock %}
 
 {% block body %}
 <div id="bigfivemain">
-    <h1>Bigfive 성향 설문</h1>
-
-    <a href="{% url 'accounts:accountscreate' %}">시작하기</a>
+    <h1 class="" style="text-align:center; margin-top: 5rem; margin-bottom: 5rem;">Bigfive 성향 설문</h1>
+    <hr>
+    <div class="row">
+        
+        <button type="button" class="startBtn" onClick="location.href='/accounts/create/'">시작하기</button>
+    </div>
 </div>
 {% endblock %}

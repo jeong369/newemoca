@@ -93,6 +93,11 @@ def delete(request, info_pk) :
     info.delete()
     return redirect('notice:noticelists', 1)
 
+def contact(request) :
+    return render(request, 'notice/contact.html')
+
+
+
 # API
 @api_view(['GET'])
 def InfoGetSerializer(request) :
