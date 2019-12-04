@@ -1,4 +1,5 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render, get_object_or_404
+from django.http import JsonResponse, HttpResponseBadRequest
 from accounts.models import User
 from accounts.forms import UserCreationForm
 from .models import Test, Score, Adjective
@@ -34,7 +35,7 @@ def gettest(request, test_num) :
 
     # 12문항
     if test_num == 12 :
-        tests = Test.objects.filter(facet=12)
+        tests = Test.objects.filter(testname=12)
         print(tests)
         testlists = makefor(tests)
     # 50, 100개 랜덤으로 뽑기 문항
@@ -49,11 +50,28 @@ def gettest(request, test_num) :
     return render(request, 'bigfive/test.html', context)
 
 # 4. 각 설문 문항 저장
-def savescore(request, test_pk, score_grade) :
-
+def savescore(request, test_pk, score_grade, user_pk) :
     # 저장 True/False 결과만 보내주면 됨.
     # 즉, serializers.data
-    return HttpResponse('ok')
+    if request.is_ajax() :
+        test = get_object_or_404(Test, pk=test_pk)
+        user = get_object_or_404(User, pk=user_pk)
+        if len(Score.objects.filter(test=test, users=user)) == 0 :
+            score = Score(test=test, users=user, grade=score_grade)
+        else :
+            score = Score.objects.get(test=test, users=user)
+            score.grade = score_grade
+        score.save()
+        return JsonResponse({'is_save_ok' : True})
+    else :
+        return HttpResponseBadRequest
 
 
-# 5. 
+# 5. 결과 보여주기
+def result(request, user_pk, test_num) :
+    # test_num = test 번호
+    # scores = get_object_or_404(User, pk=user_pk).score_sets
+    # print(scores)
+
+    context = {}
+    return render(request, 'bigfive/result.html', context)

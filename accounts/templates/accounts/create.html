@@ -42,7 +42,11 @@
       <h1 style="text:bold;text-align:center">당신의 정보를 알려주세요</h1>
       <hr>
       <div id="signupform" class="container" style="flow">
-        
+        {% for message in messages %}
+            {% if message.tags %}
+                <p>※ {{ message }} ※</p><br>
+            {% endif %}
+        {% endfor %}
         <div class="row">
             <label class="label" for="nickname"><b>닉네임</b></label>
             <input class="sign_in_up_input_name" type="text" placeholder="당신만의 닉네임을 적어주세요." name="name" required>

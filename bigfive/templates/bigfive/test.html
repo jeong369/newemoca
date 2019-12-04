@@ -28,12 +28,14 @@
 
 {% block body %}
 <div id="bigfivetest">
-    <h1>bigfive 설문</h1>
-    <div class="row" style="">
-        <ul id="collection">
+    <h1 style="text-align:center; margin-top: 5rem; margin-bottom: 3rem;">bigfive 설문</h1>
+    <hr>
+
+    <div class="row">
+        <ul id="collection" >
             {% for test in test_lists %}
-                <li id="q{{forloop.counter}}" style="display:list-item">
-                    <div class="qeustion_wrapper">
+                <li id="q{{forloop.counter}}" style="display:list-item; {% if forloop.counter != 1 %} visibility:hidden; {% else %} visibility: visible;{% endif %}">
+                    <div class="qeustion_wrapper" >
                         <div class="question_{{test.pk}}">
                             <b>{{ test.question }}</b>
                         </div>
@@ -60,18 +62,92 @@
         el: '#bigfivetest',
         delimiters: ['[[', ']]'],
         data : {
-            username : window.sessionStorage['username']
+            username : window.sessionStorage['username'],
+            scorelist : {},
+            test_num : 0,
+            user_info : [],
+            success : 0,
+            user_pk : 0,
         },
         methods : {
-            keepscore(test_pk, idx, value) {
-                console.log("들어옴")
-                console.log(test_pk, idx, value)
-                // 다른거 안보이기
+            async goresult(user_pk, test_num) {
+                console.log("result")
+                location.href = `/bigfive/result/${user_pk}/${test_num}`
+            },
+            async keepscore(test_pk, idx, value) {
+                // console.log("들어옴")
+                // console.log(test_pk, idx, value)
                 
-                // 점수 저장하기
+                question = document.querySelector(`#q${idx}`)
+                console.log(question)
+
+                if (idx === this.test_num) {
+                    this.scorelist[test_pk] = value
+
+                    // user 가져오기
+                    var users_res = await axios.get('/accounts/user/')
+                    var users = users_res.data
+                    // console.log(users)
+                    for(var i=0; i < users.length; i++) {
+                        if (users[i]['name'] === this.user_info[0] && users[i]['age'] === this.user_info[1] && users[i]['gender'] === this.user_info[2]) {
+                            this.user_pk = users[i]['id'];
+                            console.log(this.user_pk)
+                            }
+                        }
+                    
+                    // 점수 저장하기
+                    for(test in this.scorelist) {
+                        // console.log(test, this.scorelist[test])
+
+                        var url = `/bigfive/save/${test}/${this.scorelist[test]}/${this.user_pk}/`
+
+                        axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest'
+                        axios.defaults.xsrfCookieName="csrftoken"
+                        axios.defaults.xsrfHeaderName="X-CSRFToken"
+                        var is_save_ok = await axios({
+                                methods : 'post',
+                                url : url,
+                                data : this.user_info
+                            })
+                        // console.log(is_save_ok)
+                    }
+                    
+                    
+                    
+                    await this.goresult(this.user_pk, this.test_num)
+                    
+                    
+
+                } else {
+                    
+                    this.scorelist[test_pk] = value
+                    // console.log(typeof(this.scorelist))
+                    
+                    // 다른거 안보이기
+                    question.style.visibility = 'hidden';
+                    question.style.display = 'none';
+                    var next_question = document.querySelector(`#q${idx+1}`)
+                    // console.log(next_question)
+                    next_question.style.visibility = 'visible';
+                }
+
+                
 
             },
         
+        },
+        mounted() {
+            this.test_num = parseInt(window.location.href.split('/')[5])
+            this.user_info = [window.sessionStorage['username'], parseInt(window.sessionStorage['userage']), window.sessionStorage['usergender']]
+            console.log(this.user_info)
+
+            axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest'
+            axios.defaults.xsrfCookieName="csrftoken"
+            axios.defaults.xsrfHeaderName="X-CSRFToken"
+
+            
+            
+
         }
     })
 </script>

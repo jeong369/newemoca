@@ -9,6 +9,8 @@ class Test(models.Model) :
 	label = models.CharField(max_length=1, null=False, blank=False)
 	# facet : 6가지 특징
 	facet = models.CharField(max_length=20, blank=True)
+	# test number (12, 50, 100, ...)
+	testname = models.IntegerField(null=True)
 	# key : 1 or -1
 	key = models.IntegerField(blank=False)
 	score_users = models.ManyToManyField(User, through='Score', related_name='score_tests')

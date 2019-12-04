@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import User
 from .forms import CreateForm
+from django.contrib import messages
 
 # serailizers
 from .serializers import UserSerializer, SearchUserSerializer
@@ -21,12 +22,15 @@ def create(request) :
             user.name = request.POST.get('name')
             user.age = request.POST.get('age')
             user.gender = request.POST.get('gender')
-            user = user.save()
 
-            nowuser = get_object_or_404(User, name=request.POST.get('name'), age=request.POST.get('age'), gender=request.POST.get('gender'))
-
-            # context = {'nowuser' : nowuser}
-            return redirect('bigfive:bigfiveselect')
+            if len(User.objects.filter(name=request.POST.get('name'), age=request.POST.get('age'), gender=request.POST.get('gender'))) >= 1 :
+                messages.info(request, "다른 닉네임을 입력해주세요.")
+                return redirect('accounts:accountscreate')
+            else :
+                user = user.save()
+                nowuser = get_object_or_404(User, name=request.POST.get('name'), age=request.POST.get('age'), gender=request.POST.get('gender'))
+                # context = {'nowuser' : nowuser}
+                return redirect('bigfive:bigfiveselect')
     
     return render(request, 'accounts/create.html')
 

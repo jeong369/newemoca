@@ -8,7 +8,8 @@ urlpatterns = [
     path('', views.index, name="bigfivemain"),
     path('select/', views.select, name="bigfiveselect"),
     path('select/<int:test_num>/', views.gettest, name="bigfivegettest"),
-    path('select/<int:test_pk>/<int:score_grade>/', views.savescore, name="bigfivesavescore"),
+    path('save/<int:test_pk>/<int:score_grade>/<int:user_pk>/', views.savescore, name="bigfivesavescore"),
+    path('result/<int:user_pk>/<int:test_num>/', views.result, name="bigfiveresult"),
     # path('create/', views.create),
     
     # API Link

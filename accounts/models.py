@@ -22,5 +22,5 @@ class User(models.Model):
     def __str__(self) :
         return self.name
     
-    # USERNAME_FIELD = 'name'
+    unique_together = ['name', 'age', 'gender']
 
