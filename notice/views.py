@@ -6,6 +6,7 @@ from django.core.files.storage import FileSystemStorage
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from math import ceil
+from django.contrib.auth.decorators import login_required
 
 from .models import Info
 from .forms import CreateForm
@@ -51,7 +52,7 @@ def detail(request, info_pk) :
     context = {'post':info}
     return render(request, 'notice/detail.html', context)
 
-
+@login_required
 @require_http_methods(['POST', 'GET'])
 def create(request) :
     if request.user.is_staff != True :
@@ -88,6 +89,21 @@ def create(request) :
         context = {'post_form':post_form}
         return render(request, 'notice/create.html', context)
 
+@login_required
+def update(request, info_pk) :
+    info = Info.objects.get(pk=info_pk)
+    print(info)
+    if request.method == "POST" :
+        info_form = CreateForm(request.POST, request.FILES, instance=info)
+        if info_form.is_valid() :
+            inform = info_form.save()
+            return redirect('/notice/detail/{}'.format(info_pk))
+    else :
+        post_form = CreateForm(instance=info)
+        context = {'post_form' : post_form , 'info_pk':info_pk}
+        return render(request, 'notice/update.html', context)
+
+@login_required
 def delete(request, info_pk) :
     info = get_object_or_404(Info, pk=info_pk)
     info.delete()

@@ -51,7 +51,10 @@
         /* opacity: 0.5; */
     }
     .emoca_intro {
-        margin-top: 20px;
+        margin-top: 1.5em;
+    }
+    #contact {
+        display: none;
     }
 </style>
 
@@ -65,15 +68,40 @@
         <img src="{% static 'notice/images/group@2x_1.png' %}">
         <!-- <h1>EmoCA</h1> -->
         <h3 class="emoca_intro">
-                기분 좋은 대화 챗봇 EMOCA<br>
+                <p>기분 좋은 대화 챗봇 EMOCA</p><br>
                 <!-- 인공지능 대화 친구 EMOCA<br>
                 성장하는 대화 인공지능 EMOCA<br> -->
-                <p style="margin-top: 5px;">EMOCA와 함께 즐거운 감성대화를 시작해 보세요!</p>
+                <p style="margin-top: 0.5rem;">EMOCA와 함께 즐거운 감성대화를 시작해 보세요!</p>
         </h3>
     </div>
     <div class="getStarted">
         <!-- <a class="getStartedApp withSpecDemo" href="https://app.zeplin.io/register">모바일 앱으로 바로가기</a> -->
-        <a href="/notice/lists/1" class="goToNotice visible">공지사항 보러가기 →</a>
+        <a href="/notice/lists/1" class="goToNotice visible">대화 시작하기 →</a>
     </div>
+
+    <section class="page-section" id="contact" >
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="mt-0">Let's Get In Touch!</h2>
+                    <hr class="divider my-4">
+                    <p class="text-muted mb-5">Ready to start your next project with us? Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                </div>
+            </div>
+                <div class="row">
+                    <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+                    <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
+                    <div>+82 (042) 750-7092</div>
+                </div>
+                <div class="col-lg-4 mr-auto text-center">
+                    <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
+                    <!-- Make sure to change the email address in anchor text AND the link below! -->
+                    <a class="d-block" href="mailto:ki4ai@kiast.ac.kr">ki4ai@kaist.ac.kt</a>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
+
+
 {% endblock %}

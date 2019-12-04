@@ -3,7 +3,9 @@
 {% block style %} 
 <style>
     #detail {
-
+        width:100%;
+        margin-left: 50px;
+        margin-right: 50px;
     }
     .container {
         margin-top: 50px;
@@ -15,6 +17,10 @@
     td {
         margin-right: 10px;
     }
+    #detail .buttonlist {
+        text-align: center;
+        margin-top: 3rem;
+    }
 </style>
 
 
@@ -23,52 +29,85 @@
 {% block body %}
     <div id="detail">
         <div class="container">
-            <h1></h1>
-            {% if request.user.is_staff %}
-            <button type="button" class="btn btn-secondary"><a href="{% url 'notice:noticedelete' post.id %}">삭제</a></button>
-            {% endif %}
-            <thead>
+            <div class="row">
 
-            </thead>
-            <tbody>
-                <table>
-                <tr>
-                    <td>번호</td>
-                    <td>{{ post.id }}</td>
-                </tr>
-                <tr>
-                    <td>제목</td>
-                    <td>{{ post.title }}</td>
-                </tr>
-                <tr>
-                    <td>첨부파일</td>
-                    {% if post.file %}
-                    <td><a id="id_upload_file" href="{{post.file.url}}" download>{{ post.file }}</a></td>
-                    {% else %}
-                    <td><p>x</p></td>
-                    {% endif %}
-                </tr>
-                <tr>
-                    <td>내용</td>
-                    <td>{{ post.content|safe }}</td>
-                </tr>
-                <tr>
-                    <td>작성시간</td>
-                    <td>{{ post.created_at }}</td>
-                </tr>
-                </table>
-            </tbody>
-            <input type=button value="Previous Page" onClick="javascript:history.go(-1);">
-            <a class="page-link" href="#" @click="back">뒤로가기</a>
+                <!-- Post Content Column -->
+                <div class="col-lg-12">
+                    
+                    <!-- Title -->
+                    <h1 class="mt-4" style="text-align:center; margin-top: 5rem; margin-bottom: 3rem;">{{post.title}}</h1>
+                    
+                    <!-- Date/Time -->
+                    <p style="text-align: end;">{{post.created_at}}</p>
+                    <!-- Author -->
+                    <p class="lead" style="text-align: end;">
+                            by 관리자
+                        </p>
+                        
+                        <hr>
+                        
+                        <!-- File -->
+                        <span style="display: inline;">첨부파일 다운로드</span>
+                        <p>
+                            {% if post.file %}
+                            <a id="id_upload_file" href="{{post.file.url}}" download>{{ post.file }}</a>
+                            {% else %}
+                            <p style="vertical-align: middle;">첨부파일 없음</p>
+                            {% endif %}
+                        </p>
+                        
+                        <hr>
+                        
+                        <!-- Post Content -->
+                        <p>{{post.content|safe}}</p>
+                        <hr>
+                        
+                        
+                        
+                        
+                        <!-- <thead>
+                            <h1>anjwl</h1>
+                        </thead>
+                        <tbody>
+                            <table>
+                                
+                                <tr>
+                                    <td>작성시간</td>
+                                    <td>{{ post.created_at }}</td>
+                                </tr>
+                                <tr>
+                                    <td>첨부파일</td>
+                                    {% if post.file %}
+                                    <td><a id="id_upload_file" href="{{post.file.url}}" download>{{ post.file }}</a></td>
+                                    {% else %}
+                                    <td style="vertical-align: middle;"><p>첨부파일 없음</p></td>
+                                    {% endif %}
+                                </tr>
+                                <tr>
+                                    <td>내용</td>
+                                    <td>{{ post.content|safe }}</td>
+                                </tr>
+                            </table>
+                        </tbody> -->
+                        <div class="buttonlist">
+                            
+                            <button type="button" class="btn btn-primary" onClick="javascript:history.go(-1);">이전</button>
+                            <button type="button" class="btn"><a class="page-link" href="#" @click="back">목록</a></button>
+                            {% if request.user.is_staff %}
+                            <button type="button" class="btn btn-danger" onclick="location.href='/notice/delete/{{post.id}}'">삭제</button>
+                            <button type="button" class="btn btn-info" onclick="location.href='/notice/update/{{post.id}}'">수정</button>    
+                            {% endif %}
+                        </div>
+                </div>
         </div>
-            
-
+        
+        
     </div>
-
+    
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-
+    
     <script>
         var noticeapp = new Vue({
             el: '#detail',

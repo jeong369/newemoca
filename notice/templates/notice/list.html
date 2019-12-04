@@ -3,7 +3,9 @@
 {% block style %} 
 <style>
     #notice {
-
+        width:100%;
+        margin-left: 50px;
+        margin-right: 50px;
     }
     .container {
         margin-top: 250px;
@@ -52,7 +54,9 @@
                         <th class="th-sm" >제목</th>
                         <th class="th-sm" style="width:20%">날짜</th>
                         {% if request.user.is_staff %}
-                            <th class="th-sm" style="width:5%">공개여부</th>
+                            <th class="th-sm" style="width:10%">공개여부</th>
+                        {% else %}
+                            <th class="th-sm" style="width:10%">진행여부</th>
                         {% endif %}
                     </tr>
                 </thead>
@@ -66,7 +70,15 @@
                             <td id="title_{{post.id}}"><p>{{ post.title }}</p></td>
                         {% endif %}
                         <td>{{ post.created_at }}</td>
+                        {% if request.user.is_staff %}
                         <td><i v-on:click="oxdefine({{post.id}})" class="{% if post.available == '0' %} far fa-circle {% else %} fas fa-times {% endif %} fa-lg ox-button-{{post.id}}" style="color:black;"></i></td>
+                        {% else %}
+                            {% if post.available == '0' %}
+                                <td><p>완료</p></td>
+                            {% else %}
+                                <td><p>진행</p></td>
+                            {% endif %}
+                        {% endif %}
                     </tr>
                     {% endfor %}
                     
