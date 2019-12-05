@@ -1,0 +1,3602 @@
+[
+	{
+		"pk": 1,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Anxiety",
+			"key": 1,
+			"question": "Worry about things.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 2,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Anxiety",
+			"key": 1,
+			"question": "Fear for the worst.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 3,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Anxiety",
+			"key": 1,
+			"question": "Am afraid of many things.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 4,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Anxiety",
+			"key": 1,
+			"question": "Get stressed out easily.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 5,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Anxiety",
+			"key": 1,
+			"question": "Get caught up in my problems.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 6,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Anxiety",
+			"key": -1,
+			"question": "Am not easily bothered by things.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 7,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Anxiety",
+			"key": -1,
+			"question": "Am relaxed most of the time.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 8,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Anxiety",
+			"key": -1,
+			"question": "Am not easily disturbed by events.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 9,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Anxiety",
+			"key": -1,
+			"question": "Don't worry about things that have already happened.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 10,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Anxiety",
+			"key": -1,
+			"question": "Adapt easily to new situations.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 11,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Anger",
+			"key": 1,
+			"question": "Get angry easily.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 12,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Anger",
+			"key": 1,
+			"question": "Get irritated easily.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 13,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Anger",
+			"key": 1,
+			"question": "Get upset easily.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 14,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Anger",
+			"key": 1,
+			"question": "Am often in a bad mood.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 15,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Anger",
+			"key": 1,
+			"question": "Lose my temper.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 16,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Anger",
+			"key": -1,
+			"question": "Rarely get irritated.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 17,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Anger",
+			"key": -1,
+			"question": "Seldom get mad.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 18,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Anger",
+			"key": -1,
+			"question": "Am not easily annoyed.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 19,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Anger",
+			"key": -1,
+			"question": "Keep my cool.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 20,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Anger",
+			"key": -1,
+			"question": "Rarely complain.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 21,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Depression",
+			"key": 1,
+			"question": "Often feel blue.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 22,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Depression",
+			"key": 1,
+			"question": "Dislike myself.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 23,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Depression",
+			"key": 1,
+			"question": "Am often down in the dumps.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 24,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Depression",
+			"key": 1,
+			"question": "Have a low opinion of myself.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 25,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Depression",
+			"key": 1,
+			"question": "Have frequent mood swings.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 26,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Depression",
+			"key": 1,
+			"question": "Feel desperate.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 27,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Depression",
+			"key": 1,
+			"question": "Feel that my life lacks direction.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 28,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Depression",
+			"key": -1,
+			"question": "Seldom feel blue.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 29,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Depression",
+			"key": -1,
+			"question": "Feel comfortable with myself.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 30,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Depression",
+			"key": -1,
+			"question": "Am very pleased with myself.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 31,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Self-Consciousness",
+			"key": 1,
+			"question": "Am easily intimidated.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 32,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Self-Consciousness",
+			"key": 1,
+			"question": "Am afraid that I will do the wrong thing.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 33,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Self-Consciousness",
+			"key": 1,
+			"question": "Find it difficult to approach others.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 34,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Self-Consciousness",
+			"key": 1,
+			"question": "Am afraid to draw attention to myself.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 35,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Self-Consciousness",
+			"key": 1,
+			"question": "Only feel comfortable with friends.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 36,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Self-Consciousness",
+			"key": 1,
+			"question": "Stumble over my words.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 37,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Self-Consciousness",
+			"key": -1,
+			"question": "Am not embarrassed easily.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 38,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Self-Consciousness",
+			"key": -1,
+			"question": "Am comfortable in unfamiliar situations.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 39,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Self-Consciousness",
+			"key": -1,
+			"question": "Am not bothered by difficult social situations.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 40,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Self-Consciousness",
+			"key": -1,
+			"question": "Am able to stand up for myself.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 41,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Immoderation",
+			"key": 1,
+			"question": "Often eat too much.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 42,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Immoderation",
+			"key": 1,
+			"question": "Don't know why I do some of the things I do.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 43,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Immoderation",
+			"key": 1,
+			"question": "Do things I later regret.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 44,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Immoderation",
+			"key": 1,
+			"question": "Go on binges.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 45,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Immoderation",
+			"key": 1,
+			"question": "Love to eat.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 46,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Immoderation",
+			"key": -1,
+			"question": "Rarely overindulge.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 47,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Immoderation",
+			"key": -1,
+			"question": "Easily resist temptations.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 48,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Immoderation",
+			"key": -1,
+			"question": "Am able to control my cravings.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 49,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Immoderation",
+			"key": -1,
+			"question": "Never spend more than I can afford.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 50,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Immoderation",
+			"key": -1,
+			"question": "Never splurge.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 51,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Vulnerability",
+			"key": 1,
+			"question": "Panic easily.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 52,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Vulnerability",
+			"key": 1,
+			"question": "Become overwhelmed by events.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 53,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Vulnerability",
+			"key": 1,
+			"question": "Feel that I'm unable to deal with things.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 54,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Vulnerability",
+			"key": 1,
+			"question": "Can't make up my mind.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 55,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Vulnerability",
+			"key": 1,
+			"question": "Get overwhelmed by emotions.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 56,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Vulnerability",
+			"key": -1,
+			"question": "Remain calm under pressure.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 57,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Vulnerability",
+			"key": -1,
+			"question": "Can handle complex problems.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 58,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Vulnerability",
+			"key": -1,
+			"question": "Know how to cope.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 59,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Vulnerability",
+			"key": -1,
+			"question": "Readily overcome setbacks.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 60,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "Vulnerability",
+			"key": -1,
+			"question": "Am calm even in tense situations.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 61,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Friendliness",
+			"key": 1,
+			"question": "Make friends easily.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 62,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Friendliness",
+			"key": 1,
+			"question": "Warm up quickly to others.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 63,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Friendliness",
+			"key": 1,
+			"question": "Feel comfortable around people.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 64,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Friendliness",
+			"key": 1,
+			"question": "Act comfortably with others.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 65,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Friendliness",
+			"key": 1,
+			"question": "Cheer people up.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 66,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Friendliness",
+			"key": -1,
+			"question": "Am hard to get to know.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 67,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Friendliness",
+			"key": -1,
+			"question": "Often feel uncomfortable around others.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 68,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Friendliness",
+			"key": -1,
+			"question": "Avoid contacts with others.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 69,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Friendliness",
+			"key": -1,
+			"question": "Am not really interested in others.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 70,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Friendliness",
+			"key": -1,
+			"question": "Keep others at a distance.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 71,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Gregariousness",
+			"key": 1,
+			"question": "Love large parties.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 72,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Gregariousness",
+			"key": 1,
+			"question": "Talk to a lot of different people at parties.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 73,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Gregariousness",
+			"key": 1,
+			"question": "Enjoy being part of a group.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 74,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Gregariousness",
+			"key": 1,
+			"question": "Involve others in what I am doing.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 75,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Gregariousness",
+			"key": 1,
+			"question": "Love surprise parties.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 76,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Gregariousness",
+			"key": -1,
+			"question": "Prefer to be alone.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 77,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Gregariousness",
+			"key": -1,
+			"question": "Want to be left alone.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 78,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Gregariousness",
+			"key": -1,
+			"question": "Don't like crowded events.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 79,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Gregariousness",
+			"key": -1,
+			"question": "Avoid crowds.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 80,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Gregariousness",
+			"key": -1,
+			"question": "Seek quiet.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 81,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Assertiveness",
+			"key": 1,
+			"question": "Take charge.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 82,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Assertiveness",
+			"key": 1,
+			"question": "Try to lead others.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 83,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Assertiveness",
+			"key": 1,
+			"question": "Can talk others into doing things.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 84,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Assertiveness",
+			"key": 1,
+			"question": "Seek to influence others.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 85,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Assertiveness",
+			"key": 1,
+			"question": "Take control of things.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 86,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Assertiveness",
+			"key": -1,
+			"question": "Wait for others to lead the way.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 87,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Assertiveness",
+			"key": -1,
+			"question": "Keep in the background.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 88,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Assertiveness",
+			"key": -1,
+			"question": "Have little to say.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 89,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Assertiveness",
+			"key": -1,
+			"question": "Don't like to draw attention to myself.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 90,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Assertiveness",
+			"key": -1,
+			"question": "Hold back my opinions.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 91,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Activity-Level",
+			"key": 1,
+			"question": "Am always busy.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 92,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Activity-Level",
+			"key": 1,
+			"question": "Am always on the go.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 93,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Activity-Level",
+			"key": 1,
+			"question": "Do a lot in my spare time.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 94,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Activity-Level",
+			"key": 1,
+			"question": "Can manage many things at the same time.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 95,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Activity-Level",
+			"key": 1,
+			"question": "React quickly.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 96,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Activity-Level",
+			"key": -1,
+			"question": "Like to take it easy.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 97,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Activity-Level",
+			"key": -1,
+			"question": "Like to take my time.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 98,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Activity-Level",
+			"key": -1,
+			"question": "Like a leisurely lifestyle.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 99,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Activity-Level",
+			"key": -1,
+			"question": "Let things proceed at their own pace.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 100,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Activity-Level",
+			"key": -1,
+			"question": "React slowly.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 101,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Excitement-Seeking",
+			"key": 1,
+			"question": "Love excitement.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 102,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Excitement-Seeking",
+			"key": 1,
+			"question": "Seek adventure.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 103,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Excitement-Seeking",
+			"key": 1,
+			"question": "Love action.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 104,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Excitement-Seeking",
+			"key": 1,
+			"question": "Enjoy being part of a loud crowd.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 105,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Excitement-Seeking",
+			"key": 1,
+			"question": "Enjoy being reckless.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 106,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Excitement-Seeking",
+			"key": 1,
+			"question": "Act wild and crazy.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 107,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Excitement-Seeking",
+			"key": 1,
+			"question": "Am willing to try anything once.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 108,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Excitement-Seeking",
+			"key": 1,
+			"question": "Seek danger.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 109,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Excitement-Seeking",
+			"key": -1,
+			"question": "Would never go hang gliding or bungee jumping.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 110,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Excitement-Seeking",
+			"key": -1,
+			"question": "Dislike loud music.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 111,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Cheerfulness",
+			"key": 1,
+			"question": "Radiate joy.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 112,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Cheerfulness",
+			"key": 1,
+			"question": "Have a lot of fun.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 113,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Cheerfulness",
+			"key": 1,
+			"question": "Express childlike joy.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 114,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Cheerfulness",
+			"key": 1,
+			"question": "Laugh my way through life.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 115,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Cheerfulness",
+			"key": 1,
+			"question": "Love life.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 116,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Cheerfulness",
+			"key": 1,
+			"question": "Look at the bright side of life.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 117,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Cheerfulness",
+			"key": 1,
+			"question": "Laugh aloud.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 118,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Cheerfulness",
+			"key": 1,
+			"question": "Amuse my friends.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 119,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Cheerfulness",
+			"key": -1,
+			"question": "Am not easily amused.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 120,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "Cheerfulness",
+			"key": -1,
+			"question": "Seldom joke around.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 121,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Imagination",
+			"key": 1,
+			"question": "Have a vivid imagination.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 122,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Imagination",
+			"key": 1,
+			"question": "Enjoy wild flights of fantasy.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 123,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Imagination",
+			"key": 1,
+			"question": "Love to daydream.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 124,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Imagination",
+			"key": 1,
+			"question": "Like to get lost in thought.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 125,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Imagination",
+			"key": 1,
+			"question": "Indulge in my fantasies.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 126,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Imagination",
+			"key": 1,
+			"question": "Spend time reflecting on things.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 127,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Imagination",
+			"key": -1,
+			"question": "Seldom daydream.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 128,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Imagination",
+			"key": -1,
+			"question": "Do not have a good imagination.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 129,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Imagination",
+			"key": -1,
+			"question": "Seldom get lost in thought.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 130,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Imagination",
+			"key": -1,
+			"question": "Have difficulty imagining things.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 131,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Artistic-Interests",
+			"key": 1,
+			"question": "Believe in the importance of art.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 132,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Artistic-Interests",
+			"key": 1,
+			"question": "Like music.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 133,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Artistic-Interests",
+			"key": 1,
+			"question": "See beauty in things that others might not notice.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 134,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Artistic-Interests",
+			"key": 1,
+			"question": "Love flowers.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 135,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Artistic-Interests",
+			"key": 1,
+			"question": "Enjoy the beauty of nature.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 136,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Artistic-Interests",
+			"key": -1,
+			"question": "Do not like art.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 137,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Artistic-Interests",
+			"key": -1,
+			"question": "Do not like poetry.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 138,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Artistic-Interests",
+			"key": -1,
+			"question": "Do not enjoy going to art museums.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 139,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Artistic-Interests",
+			"key": -1,
+			"question": "Do not like concerts.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 140,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Artistic-Interests",
+			"key": -1,
+			"question": "Do not enjoy watching dance performances.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 141,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Emotionality",
+			"key": 1,
+			"question": "Experience my emotions intensely.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 142,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Emotionality",
+			"key": 1,
+			"question": "Feel others' emotions.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 143,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Emotionality",
+			"key": 1,
+			"question": "Am passionate about causes.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 144,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Emotionality",
+			"key": 1,
+			"question": "Enjoy examining myself and my life.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 145,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Emotionality",
+			"key": 1,
+			"question": "Try to understand myself.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 146,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Emotionality",
+			"key": -1,
+			"question": "Seldom get emotional.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 147,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Emotionality",
+			"key": -1,
+			"question": "Am not easily affected by my emotions.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 148,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Emotionality",
+			"key": -1,
+			"question": "Rarely notice my emotional reactions.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 149,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Emotionality",
+			"key": -1,
+			"question": "Experience very few emotional highs and lows.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 150,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Emotionality",
+			"key": -1,
+			"question": "Don't understand people who get emotional.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 151,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Adventurousness",
+			"key": 1,
+			"question": "Prefer variety to routine.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 152,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Adventurousness",
+			"key": 1,
+			"question": "Like to visit new places.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 153,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Adventurousness",
+			"key": 1,
+			"question": "Am interested in many things.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 154,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Adventurousness",
+			"key": 1,
+			"question": "Like to begin new things.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 155,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Adventurousness",
+			"key": -1,
+			"question": "Prefer to stick with things that I know.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 156,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Adventurousness",
+			"key": -1,
+			"question": "Dislike changes.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 157,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Adventurousness",
+			"key": -1,
+			"question": "Don't like the idea of change.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 158,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Adventurousness",
+			"key": -1,
+			"question": "Am a creature of habit.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 159,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Adventurousness",
+			"key": -1,
+			"question": "Dislike new foods.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 160,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Adventurousness",
+			"key": -1,
+			"question": "Am attached to conventional ways.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 161,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Intellect",
+			"key": 1,
+			"question": "Like to solve complex problems.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 162,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Intellect",
+			"key": 1,
+			"question": "Love to read challenging material.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 163,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Intellect",
+			"key": 1,
+			"question": "Have a rich vocabulary.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 164,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Intellect",
+			"key": 1,
+			"question": "Can handle a lot of information.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 165,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Intellect",
+			"key": 1,
+			"question": "Enjoy thinking about things.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 166,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Intellect",
+			"key": -1,
+			"question": "Am not interested in abstract ideas.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 167,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Intellect",
+			"key": -1,
+			"question": "Avoid philosophical discussions.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 168,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Intellect",
+			"key": -1,
+			"question": "Have difficulty understanding abstract ideas.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 169,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Intellect",
+			"key": -1,
+			"question": "Am not interested in theoretical discussions.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 170,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Intellect",
+			"key": -1,
+			"question": "Avoid difficult reading material.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 171,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Liberalism",
+			"key": 1,
+			"question": "Tend to vote for liberal political candidates.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 172,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Liberalism",
+			"key": 1,
+			"question": "Believe that there is no absolute right and wrong.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 173,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Liberalism",
+			"key": 1,
+			"question": "Believe that criminals should receive help rather than \r\n            punishment.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 174,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Liberalism",
+			"key": -1,
+			"question": "Believe in one true religion.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 175,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Liberalism",
+			"key": -1,
+			"question": "Tend to vote for conservative political candidates.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 176,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Liberalism",
+			"key": -1,
+			"question": "Believe that too much tax money goes to support artists.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 177,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Liberalism",
+			"key": -1,
+			"question": "Believe laws should be strictly enforced.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 178,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Liberalism",
+			"key": -1,
+			"question": "Believe that we coddle criminals too much.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 179,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Liberalism",
+			"key": -1,
+			"question": "Believe that we should be tough on crime.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 180,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "Liberalism",
+			"key": -1,
+			"question": "Like to stand during the national anthem.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 181,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Trust",
+			"key": 1,
+			"question": "Trust others.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 182,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Trust",
+			"key": 1,
+			"question": "Believe that others have good intentions.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 183,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Trust",
+			"key": 1,
+			"question": "Trust what people say.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 184,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Trust",
+			"key": 1,
+			"question": "Believe that people are basically moral.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 185,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Trust",
+			"key": 1,
+			"question": "Believe in human goodness.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 186,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Trust",
+			"key": 1,
+			"question": "Think that all will be well.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 187,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Trust",
+			"key": -1,
+			"question": "Distrust people.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 188,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Trust",
+			"key": -1,
+			"question": "Suspect hidden motives in others.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 189,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Trust",
+			"key": -1,
+			"question": "Am wary of others.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 190,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Trust",
+			"key": -1,
+			"question": "Believe that people are essentially evil.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 191,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Morality",
+			"key": 1,
+			"question": "Would never cheat on my taxes.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 192,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Morality",
+			"key": 1,
+			"question": "Stick to the rules.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 193,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Morality",
+			"key": -1,
+			"question": "Use flattery to get ahead.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 194,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Morality",
+			"key": -1,
+			"question": "Use others for my own ends.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 195,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Morality",
+			"key": -1,
+			"question": "Know how to get around the rules.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 196,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Morality",
+			"key": -1,
+			"question": "Cheat to get ahead.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 197,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Morality",
+			"key": -1,
+			"question": "Put people under pressure.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 198,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Morality",
+			"key": -1,
+			"question": "Pretend to be concerned for others.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 199,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Morality",
+			"key": -1,
+			"question": "Take advantage of others.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 200,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Morality",
+			"key": -1,
+			"question": "Obstruct others' plans.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 201,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Altruism",
+			"key": 1,
+			"question": "Make people feel welcome.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 202,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Altruism",
+			"key": 1,
+			"question": "Anticipate the needs of others.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 203,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Altruism",
+			"key": 1,
+			"question": "Love to help others.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 204,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Altruism",
+			"key": 1,
+			"question": "Am concerned about others.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 205,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Altruism",
+			"key": 1,
+			"question": "Have a good word for everyone.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 206,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Altruism",
+			"key": -1,
+			"question": "Look down on others.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 207,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Altruism",
+			"key": -1,
+			"question": "Am indifferent to the feelings of others.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 208,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Altruism",
+			"key": -1,
+			"question": "Make people feel uncomfortable.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 209,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Altruism",
+			"key": -1,
+			"question": "Turn my back on others.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 210,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Altruism",
+			"key": -1,
+			"question": "Take no time for others.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 211,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Cooperation",
+			"key": 1,
+			"question": "Am easy to satisfy.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 212,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Cooperation",
+			"key": 1,
+			"question": "Can't stand confrontations.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 213,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Cooperation",
+			"key": 1,
+			"question": "Hate to seem pushy.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 214,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Cooperation",
+			"key": -1,
+			"question": "Have a sharp tongue.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 215,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Cooperation",
+			"key": -1,
+			"question": "Contradict others.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 216,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Cooperation",
+			"key": -1,
+			"question": "Love a good fight.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 217,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Cooperation",
+			"key": -1,
+			"question": "Yell at people.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 218,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Cooperation",
+			"key": -1,
+			"question": "Insult people.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 219,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Cooperation",
+			"key": -1,
+			"question": "Get back at others.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 220,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Cooperation",
+			"key": -1,
+			"question": "Hold a grudge.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 221,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Modesty",
+			"key": 1,
+			"question": "Dislike being the center of attention.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 222,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Modesty",
+			"key": 1,
+			"question": "Dislike talking about myself.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 223,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Modesty",
+			"key": 1,
+			"question": "Consider myself an average person.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 224,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Modesty",
+			"key": 1,
+			"question": "Seldom toot my own horn.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 225,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Modesty",
+			"key": -1,
+			"question": "Believe that I am better than others.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 226,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Modesty",
+			"key": -1,
+			"question": "Think highly of myself.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 227,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Modesty",
+			"key": -1,
+			"question": "Have a high opinion of myself.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 228,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Modesty",
+			"key": -1,
+			"question": "Know the answers to many questions.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 229,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Modesty",
+			"key": -1,
+			"question": "Boast about my virtues.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 230,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Modesty",
+			"key": -1,
+			"question": "Make myself the center of attention.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 231,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Sympathy",
+			"key": 1,
+			"question": "Sympathize with the homeless.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 232,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Sympathy",
+			"key": 1,
+			"question": "Feel sympathy for those who are worse off than myself.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 233,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Sympathy",
+			"key": 1,
+			"question": "Value cooperation over competition.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 234,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Sympathy",
+			"key": 1,
+			"question": "Suffer from others' sorrows.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 235,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Sympathy",
+			"key": -1,
+			"question": "Am not interested in other people's problems.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 236,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Sympathy",
+			"key": -1,
+			"question": "Tend to dislike soft-hearted people.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 237,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Sympathy",
+			"key": -1,
+			"question": "Believe in an eye for an eye.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 238,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Sympathy",
+			"key": -1,
+			"question": "Try not to think about the needy.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 239,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Sympathy",
+			"key": -1,
+			"question": "Believe people should fend for themselves.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 240,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "Sympathy",
+			"key": -1,
+			"question": "Can't stand weak people.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 241,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Self-Efficacy",
+			"key": 1,
+			"question": "Complete tasks successfully.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 242,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Self-Efficacy",
+			"key": 1,
+			"question": "Excel in what I do.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 243,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Self-Efficacy",
+			"key": 1,
+			"question": "Handle tasks smoothly.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 244,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Self-Efficacy",
+			"key": 1,
+			"question": "Am sure of my ground.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 245,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Self-Efficacy",
+			"key": 1,
+			"question": "Come up with good solutions.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 246,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Self-Efficacy",
+			"key": 1,
+			"question": "Know how to get things done.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 247,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Self-Efficacy",
+			"key": -1,
+			"question": "Misjudge situations.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 248,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Self-Efficacy",
+			"key": -1,
+			"question": "Don't understand things.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 249,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Self-Efficacy",
+			"key": -1,
+			"question": "Have little to contribute.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 250,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Self-Efficacy",
+			"key": -1,
+			"question": "Don't see the consequences of things.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 251,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Orderliness",
+			"key": 1,
+			"question": "Like order.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 252,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Orderliness",
+			"key": 1,
+			"question": "Like to tidy up.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 253,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Orderliness",
+			"key": 1,
+			"question": "Want everything to be \"just right.\"",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 254,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Orderliness",
+			"key": 1,
+			"question": "Love order and regularity.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 255,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Orderliness",
+			"key": 1,
+			"question": "Do things according to a plan.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 256,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Orderliness",
+			"key": -1,
+			"question": "Often forget to put things back in their proper place.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 257,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Orderliness",
+			"key": -1,
+			"question": "Leave a mess in my room.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 258,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Orderliness",
+			"key": -1,
+			"question": "Leave my belongings around.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 259,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Orderliness",
+			"key": -1,
+			"question": "Am not bothered by messy people.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 260,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Orderliness",
+			"key": -1,
+			"question": "Am not bothered by disorder.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 261,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Dutifulness",
+			"key": 1,
+			"question": "Try to follow the rules.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 262,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Dutifulness",
+			"key": 1,
+			"question": "Keep my promises.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 263,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Dutifulness",
+			"key": 1,
+			"question": "Pay my bills on time.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 264,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Dutifulness",
+			"key": 1,
+			"question": "Tell the truth.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 265,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Dutifulness",
+			"key": 1,
+			"question": "Listen to my conscience.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 266,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Dutifulness",
+			"key": -1,
+			"question": "Break rules.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 267,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Dutifulness",
+			"key": -1,
+			"question": "Break my promises.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 268,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Dutifulness",
+			"key": -1,
+			"question": "Get others to do my duties.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 269,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Dutifulness",
+			"key": -1,
+			"question": "Do the opposite of what is asked.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 270,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Dutifulness",
+			"key": -1,
+			"question": "Misrepresent the facts.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 271,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Achievement-Striving",
+			"key": 1,
+			"question": "Go straight for the goal.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 272,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Achievement-Striving",
+			"key": 1,
+			"question": "Work hard.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 273,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Achievement-Striving",
+			"key": 1,
+			"question": "Turn plans into actions.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 274,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Achievement-Striving",
+			"key": 1,
+			"question": "Plunge into tasks with all my heart.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 275,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Achievement-Striving",
+			"key": 1,
+			"question": "Do more than what's expected of me.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 276,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Achievement-Striving",
+			"key": 1,
+			"question": "Set high standards for myself and others.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 277,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Achievement-Striving",
+			"key": 1,
+			"question": "Demand quality.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 278,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Achievement-Striving",
+			"key": -1,
+			"question": "Am not highly motivated to succeed.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 279,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Achievement-Striving",
+			"key": -1,
+			"question": "Do just enough work to get by.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 280,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Achievement-Striving",
+			"key": -1,
+			"question": "Put little time and effort into my work.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 281,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Self-Discipline",
+			"key": 1,
+			"question": "Get chores done right away.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 282,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Self-Discipline",
+			"key": 1,
+			"question": "Am always prepared.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 283,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Self-Discipline",
+			"key": 1,
+			"question": "Start tasks right away.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 284,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Self-Discipline",
+			"key": 1,
+			"question": "Get to work at once.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 285,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Self-Discipline",
+			"key": 1,
+			"question": "Carry out my plans.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 286,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Self-Discipline",
+			"key": -1,
+			"question": "Find it difficult to get down to work.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 287,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Self-Discipline",
+			"key": -1,
+			"question": "Waste my time.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 288,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Self-Discipline",
+			"key": -1,
+			"question": "Need a push to get started.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 289,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Self-Discipline",
+			"key": -1,
+			"question": "Have difficulty starting tasks.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 290,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Self-Discipline",
+			"key": -1,
+			"question": "Postpone decisions.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 291,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Cautiousness",
+			"key": 1,
+			"question": "Avoid mistakes.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 292,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Cautiousness",
+			"key": 1,
+			"question": "Choose my words with care.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 293,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Cautiousness",
+			"key": 1,
+			"question": "Stick to my chosen path.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 294,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Cautiousness",
+			"key": -1,
+			"question": "Jump into things without thinking.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 295,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Cautiousness",
+			"key": -1,
+			"question": "Make rash decisions.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 296,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Cautiousness",
+			"key": -1,
+			"question": "Like to act on a whim.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 297,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Cautiousness",
+			"key": -1,
+			"question": "Rush into things.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 298,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Cautiousness",
+			"key": -1,
+			"question": "Do crazy things.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 299,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Cautiousness",
+			"key": -1,
+			"question": "Act without thinking.",
+			"question_ko": "",
+			"testname": 300
+		}
+	},
+	{
+		"pk": 300,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "Cautiousness",
+			"key": -1,
+			"question": "Often make last-minute plans.",
+			"question_ko": "",
+			"testname": 300
+		}
+	}
+]

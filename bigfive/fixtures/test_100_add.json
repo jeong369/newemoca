@@ -1,0 +1,734 @@
+[
+	{
+		"pk": 413,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "",
+			"key": 1,
+			"question": "Respect others.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 414,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "",
+			"key": 1,
+			"question": "Accept people as they are.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 415,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "",
+			"key": 1,
+			"question": "Am concerned about others.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 416,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "",
+			"key": 1,
+			"question": "Trust what people say.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 417,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "",
+			"key": 1,
+			"question": "Am easy to safety.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 418,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "",
+			"key": 1,
+			"question": "Treat all people equally.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 419,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "",
+			"key": -1,
+			"question": "Have a sharp tongue.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 420,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "",
+			"key": -1,
+			"question": "Cut others to pieces.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 421,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "",
+			"key": -1,
+			"question": "Suspect hidden motives in others.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 422,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "",
+			"key": -1,
+			"question": "Get back at others.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 423,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "",
+			"key": -1,
+			"question": "Insult people.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 424,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "",
+			"key": -1,
+			"question": "Believe that i am better than others.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 425,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "",
+			"key": -1,
+			"question": "Contradict others.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 426,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "",
+			"key": -1,
+			"question": "\"Make demands on others",
+			"question_ko": "\"",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 427,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "",
+			"key": -1,
+			"question": "Hold a grudge.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 428,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "A",
+			"facet": "",
+			"key": -1,
+			"question": "Am out for my own personal gain.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 429,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "",
+			"key": 1,
+			"question": "Follow through with my plans.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 430,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "",
+			"key": -1,
+			"question": "Do just enough work to get by.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 431,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "",
+			"key": -1,
+			"question": "Don't see things through.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 432,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "",
+			"key": -1,
+			"question": "Shirk my duties.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 433,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "",
+			"key": -1,
+			"question": "Mess things up.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 434,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "",
+			"key": -1,
+			"question": "Leave things unfinished.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 435,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "",
+			"key": -1,
+			"question": "Don't put my mind on the task at hand.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 436,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "",
+			"key": -1,
+			"question": "Make a mess of things.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 437,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "",
+			"key": -1,
+			"question": "Need a push to get started.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 438,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "",
+			"key": 1,
+			"question": "Carry out my plans.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 439,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "",
+			"key": 1,
+			"question": "Complete tasks successfully.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 440,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "C",
+			"facet": "",
+			"key": 1,
+			"question": "Finish what i start.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 441,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "",
+			"key": 1,
+			"question": "Dislike myself.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 442,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "",
+			"key": 1,
+			"question": "Am often down in the dumps.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 443,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "",
+			"key": 1,
+			"question": "Am filled with doubts about things.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 444,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "",
+			"key": 1,
+			"question": "Fear for the worst.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 445,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "",
+			"key": -1,
+			"question": "Feel comfortable with myself.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 446,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "",
+			"key": -1,
+			"question": "Am very pleased with myself.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 447,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "",
+			"key": -1,
+			"question": "Am not easily frustrated.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 448,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "",
+			"key": -1,
+			"question": "remain calm under pressure.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 449,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "N",
+			"facet": "",
+			"key": -1,
+			"question": "Rarely lose my composure.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 450,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "",
+			"key": 1,
+			"question": "Feel cofortable around people.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 451,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "",
+			"key": 1,
+			"question": "Warm up quickly to others.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 452,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "",
+			"key": 1,
+			"question": "Talk to a lot of different people at parties.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 453,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "",
+			"key": 1,
+			"question": "Don't mind being the center of attention.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 454,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "",
+			"key": 1,
+			"question": "Cheer people up.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 455,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "",
+			"key": -1,
+			"question": "Would describe my experiences as somewhat dull.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 456,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "",
+			"key": -1,
+			"question": "Avoid contacts with others.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 457,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "",
+			"key": -1,
+			"question": "Am hard to get to know.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 458,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "",
+			"key": -1,
+			"question": "Retreat from others.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 459,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "E",
+			"facet": "",
+			"key": -1,
+			"question": "Keep others at a distance.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 460,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "",
+			"key": 1,
+			"question": "Believe in the important of art.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 461,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "",
+			"key": 1,
+			"question": "Tend to vote for liberal political candidates.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 462,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "",
+			"key": 1,
+			"question": "Enjoy hearing new ideas.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 463,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "",
+			"key": 1,
+			"question": "Enjoy thinking about things.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 464,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "",
+			"key": 1,
+			"question": "Can say things beautifully.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 465,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "",
+			"key": 1,
+			"question": "Enjoy wild flights of fantasy.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 466,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "",
+			"key": 1,
+			"question": "Get excited by new ideas.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 467,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "",
+			"key": -1,
+			"question": "Do not like art.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 468,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "",
+			"key": -1,
+			"question": "Avoid pjilosophical discussions.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 469,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "",
+			"key": -1,
+			"question": "Do not enjoy going to art museums.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 470,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "",
+			"key": -1,
+			"question": "Do not like poetry.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 471,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "",
+			"key": -1,
+			"question": "Rarely look for a deeper meaning in things.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 472,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "",
+			"key": -1,
+			"question": "Believe that too much tax money goes to support artists.",
+			"question_ko": "",
+			"testname": 100
+		}
+	},
+	{
+		"pk": 473,
+		"model": "bigfive.test",
+		"fields": {
+			"label": "O",
+			"facet": "",
+			"key": -1,
+			"question": "Am not interested in theoretical discussions.",
+			"question_ko": "",
+			"testname": 100
+		}
+	}
+]

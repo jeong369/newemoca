@@ -4,6 +4,12 @@ from accounts.models import User
 from accounts.forms import UserCreationForm
 from .models import Test, Score, Adjective
 
+# serailizers
+from .serializers import TestSerializer, SearchTestSerializer, SearchTestTypeSerializer
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
+
+
 # Create your views here.
 # 1. main
 def index(request) :
@@ -40,10 +46,25 @@ def gettest(request, test_num) :
         testlists = makefor(tests)
     # 50, 100개 랜덤으로 뽑기 문항
     elif test_num == 50 or test_num == 100 :
-        testlists = []
+        if test_num == 50 :
+            tests = Test.objects.filter(testname=100)
+            # 랜덤으로 50개 골라야 함
+
+        if test_num == 100 :
+            tests = Test.objects.filter(testname=100)
+            testlists = makefor(tests)
+
+    
     # 120, 300개 랜덤으로 뽑기 문항
     elif test_num == 120 or test_num == 300 :
-        testlists = []
+
+        if test_num == 120 :
+            tests = Test.objects.filter(testname=300)
+            # 120개 랜덤으로 골라야 함
+            testlists = []
+        if test_num == 300 :
+            tests = Test.objects.filter(testname=300)
+            testlists = makefor(tests)
 
     
     context = {'test_lists' : testlists}
@@ -75,3 +96,27 @@ def result(request, user_pk, test_num) :
 
     context = {}
     return render(request, 'bigfive/result.html', context)
+
+
+
+
+# API
+@api_view(['GET'])
+def TestGetSerializer(request) :
+    tests = Test.objects.all()
+    print(tests)
+    serializer = TestSerializer(tests, many=True)
+    return Response(serializer.data)
+
+@api_view(['GET'])
+def TestInfoSerializer(request, test_pk):
+    test = Test.objects.filter(pk=test_pk)
+    print(test)
+    serializer = SearchTestSerializer(test, many=True)
+    return Response(serializer.data)
+
+@api_view(['GET'])
+def TestTypeGetSerializer(request, test_num):
+    tests = Test.objects.filter(testname=test_num)
+    serializer = SearchTestTypeSerializer(tests, many=True)
+    return Response(serializer.data)
