@@ -17,3 +17,10 @@ class SearchTestTypeSerializer(serializers.ModelSerializer):
     class Meta : 
         model = Test
         fields = '__all__'
+
+class SearchUserTestSerializer(serializers.ModelSerializer):
+    test = TestSerializer(source='user_set', many=True, read_only=True)
+    resultscore = serializers.IntegerField()
+    class Meta : 
+        model = Test
+        fields = ['label', 'facet', 'question', 'question_ko', 'key', 'testname', 'resultscore']

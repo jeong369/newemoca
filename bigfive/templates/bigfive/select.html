@@ -6,20 +6,40 @@
         width:100%;
         margin-left: 50px;
         margin-right: 50px;
+        /* display: flex; */
     }
-
+    .buttoncollect {
+        width: 50%;
+    }
+    #bigfiveselect .row {
+        justify-content: center;
+        text-align: center;
+        margin-top: 12px;
+        /* width : 20px; */
+    }
 </style>
 {% endblock %}
 
 {% block body %}
 <div id="bigfiveselect">
-    <h1>[[ username ]]님, 환영합니다. <br>설문을 선택해주세요.</h1>
-    <div class="row" style="">
-        <button v-on:click="gotest(12)">매우 간단한 12문항</button>
-        <button v-on:click="gotest(50)">간단한 50문항</button>
-        <button v-on:click="gotest(100)">무난한 100문항</button>
-        <button v-on:click="gotest(120)">정확한 120문항</button>
-        <button v-on:click="gotest(300)">매우 정확한 300문항</button>
+    <h1 style="text-align:center; margin-top: 5rem; margin-bottom: 3rem;">[[ username ]]님, 환영합니다. <br>설문을 선택해주세요.</h1><hr>
+    <div class="buttoncollect">
+
+        <div class="row" style="">
+            <button v-on:click="gotest(12)">매우 간단한 12문항</button>
+        </div>
+        <div class="row">
+            <button v-on:click="gotest(50)">간단한 50문항</button>
+        </div>
+        <div class="row">
+            <button v-on:click="gotest(100)">무난한 100문항</button>
+        </div>
+        <div class="row">
+            <button v-on:click="gotest(120)">정확한 120문항</button>
+        </div>
+        <div class="row">
+            <button v-on:click="gotest(300)">매우 정확한 300문항</button>
+        </div>
     </div>
 </div>
 

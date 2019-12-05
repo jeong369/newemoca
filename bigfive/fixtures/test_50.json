@@ -1,6 +1,6 @@
 [
 	{
-		"pk": 901,
+		"pk": 1001,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "A",
@@ -8,11 +8,11 @@
 			"key": 1,
 			"question": "Am interested in people.",
 			"question_ko": "나는 다른 사람들에 대해 관심이 있다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 902,
+		"pk": 1002,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "A",
@@ -20,11 +20,11 @@
 			"key": 1,
 			"question": "Sympathize with others' feelings.",
 			"question_ko": "나는 다른 사람들의 감정에 잘 공감한다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 903,
+		"pk": 1003,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "A",
@@ -32,11 +32,11 @@
 			"key": 1,
 			"question": "Have a soft heart.",
 			"question_ko": "나는 마음이 여린 편이다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 904,
+		"pk": 1004,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "A",
@@ -44,11 +44,11 @@
 			"key": 1,
 			"question": "Take time out for others.",
 			"question_ko": "나는 주변 다른 사람들에게 내 시간을 잘 할애하는 편이다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 905,
+		"pk": 1005,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "A",
@@ -56,11 +56,11 @@
 			"key": 1,
 			"question": "Feel others' emotions.",
 			"question_ko": "나는 주변 다른 사람들의 감정을 잘 알아차린다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 906,
+		"pk": 1006,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "A",
@@ -68,11 +68,11 @@
 			"key": 1,
 			"question": "Make people feel at ease.",
 			"question_ko": "나는 주변 다른 사람들을 편안하게 해준다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 907,
+		"pk": 1007,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "A",
@@ -80,11 +80,11 @@
 			"key": 1,
 			"question": "Inquire about others' well-being.",
 			"question_ko": "나는 내가 아는 사람들이 잘 지내고 있는지를 안부를 묻는 편이다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 908,
+		"pk": 1008,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "A",
@@ -92,11 +92,11 @@
 			"key": 1,
 			"question": "Know how to comfort others.",
 			"question_ko": "나는 다른 사람들을 편안하게 하는 방법을 안다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 909,
+		"pk": 1009,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "A",
@@ -104,11 +104,11 @@
 			"key": 1,
 			"question": "Love children.",
 			"question_ko": "나는 아이들을 매우 좋아한다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 910,
+		"pk": 1010,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "A",
@@ -116,11 +116,11 @@
 			"key": 1,
 			"question": "Am on good terms with nearly everyone.",
 			"question_ko": "나는 거의 모든 사람들과 사이가 좋다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 911,
+		"pk": 1011,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "A",
@@ -128,11 +128,11 @@
 			"key": 1,
 			"question": "Have a good word for everyone.",
 			"question_ko": "나는 다른 사람들과 한 약속은 지킨다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 912,
+		"pk": 1012,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "A",
@@ -140,11 +140,11 @@
 			"key": 1,
 			"question": "Show my gratitude.",
 			"question_ko": "나는 감사함을 잘 표현한다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 913,
+		"pk": 1013,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "A",
@@ -152,11 +152,11 @@
 			"key": 1,
 			"question": "Think of others first.",
 			"question_ko": "나는 다른 사람들을 돕는 것을 좋아한다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 914,
+		"pk": 1014,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "A",
@@ -164,11 +164,11 @@
 			"key": 1,
 			"question": "Love to help others.",
 			"question_ko": "나는 다른 사람들을 먼저 고려하며 행동한다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 915,
+		"pk": 1015,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "A",
@@ -176,11 +176,11 @@
 			"key": -1,
 			"question": "Am not interested in other people's problems.",
 			"question_ko": "나는 다른 사람들의 개인적인 문제에 관심이 없다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 916,
+		"pk": 1016,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "A",
@@ -188,11 +188,11 @@
 			"key": -1,
 			"question": "Feel little concern for others.",
 			"question_ko": "나는 다른 사람들의 근심을 거의 알아차리지 못한다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 917,
+		"pk": 1017,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "A",
@@ -200,11 +200,11 @@
 			"key": -1,
 			"question": "Am not really interested in others.",
 			"question_ko": "나는 다른 사람들에 대해 별로 관심이 없다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 918,
+		"pk": 1018,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "A",
@@ -212,11 +212,11 @@
 			"key": -1,
 			"question": "Am hard to get to know.",
 			"question_ko": "나는 친해지기 어려운 사람이다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 919,
+		"pk": 1019,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "A",
@@ -224,11 +224,11 @@
 			"key": -1,
 			"question": "Am indifferent to the feelings of others.",
 			"question_ko": "나는 다른 사람들의 감정에 무관심한 편이다.      ",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 920,
+		"pk": 1020,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "A",
@@ -236,11 +236,11 @@
 			"key": 1,
 			"question": "Believe that others have good intentions.",
 			"question_ko": "",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 921,
+		"pk": 1021,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "C",
@@ -248,11 +248,11 @@
 			"key": 1,
 			"question": "Am always prepared.",
 			"question_ko": "나는 무슨 일이든 항상 준비를 하는 편이다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 922,
+		"pk": 1022,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "C",
@@ -260,11 +260,11 @@
 			"key": 1,
 			"question": "Pay attention to details.",
 			"question_ko": "나는 세부사항도 잘 챙기려고 이에 신경을 쓰는 편이다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 923,
+		"pk": 1023,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "C",
@@ -272,11 +272,11 @@
 			"key": 1,
 			"question": "Get chores done right away.",
 			"question_ko": "나는 자질구레한 일들은 금방금방 해치운다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 924,
+		"pk": 1024,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "C",
@@ -284,11 +284,11 @@
 			"key": 1,
 			"question": "Like order.",
 			"question_ko": "나는 질서정연한 것을 좋아한다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 925,
+		"pk": 1025,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "C",
@@ -296,11 +296,11 @@
 			"key": 1,
 			"question": "Follow a schedule.",
 			"question_ko": "나는 정해진 일정을 따르는 편이다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 926,
+		"pk": 1026,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "C",
@@ -308,11 +308,11 @@
 			"key": 1,
 			"question": "Am exacting in my work.",
 			"question_ko": "나는 내가 맡은 일에 매우 꼼꼼한 사람이다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 927,
+		"pk": 1027,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "C",
@@ -320,11 +320,11 @@
 			"key": 1,
 			"question": "Do things according to a plan.",
 			"question_ko": "나는 가능하다면 계획한 대로 일을 처리한다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 928,
+		"pk": 1028,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "C",
@@ -332,11 +332,11 @@
 			"key": 1,
 			"question": "Continue until everything is perfect.",
 			"question_ko": "나는 모든 것이 완벽할 때까지 계속 일하는 편이다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 929,
+		"pk": 1029,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "C",
@@ -344,11 +344,11 @@
 			"key": 1,
 			"question": "Make plans and stick to them.",
 			"question_ko": "나는 일단 계획을 세우고 나면 그것을 철저히 따른다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 930,
+		"pk": 1030,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "C",
@@ -356,11 +356,11 @@
 			"key": 1,
 			"question": "Love order and regularity.",
 			"question_ko": "나는 질서정연함과 규칙적인 것을 좋아한다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 931,
+		"pk": 1031,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "C",
@@ -368,11 +368,11 @@
 			"key": 1,
 			"question": "Like to tidy up.",
 			"question_ko": "나는 깔끔하게 잘 정돈된 것을 좋아한다.  ",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 932,
+		"pk": 1032,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "C",
@@ -380,11 +380,11 @@
 			"key": -1,
 			"question": "Leave my belongings around.",
 			"question_ko": "나는 내 물건들을 여기저기에 그냥 놓는 편이다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 933,
+		"pk": 1033,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "C",
@@ -392,11 +392,11 @@
 			"key": -1,
 			"question": "Make a mess of things.",
 			"question_ko": "나는 물건들을 어질러 놓는 편이다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 934,
+		"pk": 1034,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "C",
@@ -404,11 +404,11 @@
 			"key": -1,
 			"question": "Often forget to put things back in their proper place.",
 			"question_ko": "나는 물건들을 제자리에 되놓은 것을 자주 잊는다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 935,
+		"pk": 1035,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "C",
@@ -416,11 +416,11 @@
 			"key": -1,
 			"question": "Shirk my duties.",
 			"question_ko": "내가 맡은 일들을 대충 처리하는 경우도 많다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 936,
+		"pk": 1036,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "C",
@@ -428,11 +428,11 @@
 			"key": -1,
 			"question": "Neglect my duties.",
 			"question_ko": "나는 내가 맡은 일을 가급적 뒷전으로 미룰 때가 많다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 937,
+		"pk": 1037,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "C",
@@ -440,11 +440,11 @@
 			"key": -1,
 			"question": "Waste my time.",
 			"question_ko": "나는 시간을 효과적으로 활용하지 못할 때가 많다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 938,
+		"pk": 1038,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "C",
@@ -452,11 +452,11 @@
 			"key": -1,
 			"question": "Do things in a half-way manner.",
 			"question_ko": "나는 일을 절반 즈음 하다가 끝까지 마무리하지 못하는 경향이 있다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 939,
+		"pk": 1039,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "C",
@@ -464,11 +464,11 @@
 			"key": -1,
 			"question": "Find it difficult to get down to work.",
 			"question_ko": "나는 내 방이 지저분해도 주로 그냥 두는 편이다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 940,
+		"pk": 1040,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "C",
@@ -476,11 +476,11 @@
 			"key": -1,
 			"question": "Leave a mess in my room.",
 			"question_ko": "나는 어떤 일이든 그 일을 시작하는 것이 어렵다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 941,
+		"pk": 1041,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "N",
@@ -488,11 +488,11 @@
 			"key": -1,
 			"question": "Am relaxed most of the time.",
 			"question_ko": "나는 대체적으로 이완된 상태이다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 942,
+		"pk": 1042,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "N",
@@ -500,11 +500,11 @@
 			"key": -1,
 			"question": "Seldom feel blue.",
 			"question_ko": "나는 거의 우울함을 느끼지 않는 편이다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 943,
+		"pk": 1043,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "N",
@@ -512,11 +512,11 @@
 			"key": -1,
 			"question": "Am not easily bothered by things.",
 			"question_ko": "나는 어떤 일 때문에 정신없이 안절부절 하는 편은 아니다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 944,
+		"pk": 1044,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "N",
@@ -524,11 +524,11 @@
 			"key": -1,
 			"question": "Rarely get irritated.",
 			"question_ko": "나는 쉽게 신경질적이 되지는 않는다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 945,
+		"pk": 1045,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "N",
@@ -536,11 +536,11 @@
 			"key": -1,
 			"question": "Seldom get mad.",
 			"question_ko": "나는 일단 화가 나도 격노하는 편은 아니다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 946,
+		"pk": 1046,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "N",
@@ -548,11 +548,11 @@
 			"key": 1,
 			"question": "Get stressed out easily.",
 			"question_ko": "나는 쉽게 스트레스로 지치는 편이다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 947,
+		"pk": 1047,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "N",
@@ -560,11 +560,11 @@
 			"key": 1,
 			"question": "Worry about things.",
 			"question_ko": "나는 걱정이 많다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 948,
+		"pk": 1048,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "N",
@@ -572,11 +572,11 @@
 			"key": 1,
 			"question": "Am easily disturbed.",
 			"question_ko": "나는 쉽게 심란해진다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 949,
+		"pk": 1049,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "N",
@@ -584,11 +584,11 @@
 			"key": 1,
 			"question": "Get upset easily.",
 			"question_ko": "나는 쉽게 속이 상한다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 950,
+		"pk": 1050,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "N",
@@ -596,11 +596,11 @@
 			"key": 1,
 			"question": "Change my mood a lot.",
 			"question_ko": "나는 분위기를 많이 탄다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 951,
+		"pk": 1051,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "N",
@@ -608,11 +608,11 @@
 			"key": 1,
 			"question": "Have frequent mood swings.",
 			"question_ko": "나는 감정의 기복이 심하다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 952,
+		"pk": 1052,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "N",
@@ -620,11 +620,11 @@
 			"key": 1,
 			"question": "Get irritated easily.",
 			"question_ko": "나는 쉽게 짜증이 난다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 953,
+		"pk": 1053,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "N",
@@ -632,11 +632,11 @@
 			"key": 1,
 			"question": "Often feel blue.",
 			"question_ko": "나는 쉽게 우울해진다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 954,
+		"pk": 1054,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "N",
@@ -644,11 +644,11 @@
 			"key": 1,
 			"question": "Get angry easily.",
 			"question_ko": "나는 쉽게 화가 난다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 955,
+		"pk": 1055,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "N",
@@ -656,11 +656,11 @@
 			"key": 1,
 			"question": "Panic easily.",
 			"question_ko": "나는 쉽게 겁먹는다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 956,
+		"pk": 1056,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "N",
@@ -668,11 +668,11 @@
 			"key": 1,
 			"question": "Feel threatened easily.",
 			"question_ko": "나는 쉽게 위협감을 느낀다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 957,
+		"pk": 1057,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "N",
@@ -680,11 +680,11 @@
 			"key": 1,
 			"question": "Get overwhelmed by emotions.",
 			"question_ko": "나는 어떤 감정에 휩쓸리면 거기서 잘 헤어나지 못한다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 958,
+		"pk": 1058,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "N",
@@ -692,11 +692,11 @@
 			"key": 1,
 			"question": "Take offense easily.",
 			"question_ko": "나는 쉽게 울화가 치민다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 959,
+		"pk": 1059,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "N",
@@ -704,11 +704,11 @@
 			"key": 1,
 			"question": "Get caught up in my problems.",
 			"question_ko": "나는 어떤 예기치 않은 사건이 생기면 이에 압도당해 어쩔 줄 모른다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 960,
+		"pk": 1060,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "N",
@@ -716,11 +716,11 @@
 			"key": 1,
 			"question": "Grumble about things.",
 			"question_ko": "나는 무언가에 대해서 잘 불평하는 편이다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 961,
+		"pk": 1061,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "E",
@@ -728,11 +728,11 @@
 			"key": 1,
 			"question": "Am the life of the party.",
 			"question_ko": "나는 각종 모임에 다니는 것을 즐긴다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 962,
+		"pk": 1062,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "E",
@@ -740,11 +740,11 @@
 			"key": 1,
 			"question": "Feel comfortable around people.",
 			"question_ko": "나는 여러 사람들 가운데 있어도 편하다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 963,
+		"pk": 1063,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "E",
@@ -752,11 +752,11 @@
 			"key": 1,
 			"question": "Start conversations.",
 			"question_ko": "나는 사람들을 만나면 대화를 먼저 시작하는 편이다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 964,
+		"pk": 1064,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "E",
@@ -764,11 +764,11 @@
 			"key": 1,
 			"question": "Talk to a lot of different people at parties.",
 			"question_ko": "나는 모임에서 여러 사람들과 이야기를 나누는 편이다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 965,
+		"pk": 1065,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "E",
@@ -776,11 +776,11 @@
 			"key": 1,
 			"question": "Don't mind being the center of attention.",
 			"question_ko": "나는 다른 사람들의 주목을 받는 것을 꺼리지 않는다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 966,
+		"pk": 1066,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "E",
@@ -788,11 +788,11 @@
 			"key": 1,
 			"question": "Make friends easily.",
 			"question_ko": "나는 어떤 일이든 나서는 편이다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 967,
+		"pk": 1067,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "E",
@@ -800,11 +800,11 @@
 			"key": 1,
 			"question": "Take charge.",
 			"question_ko": "나는 쉽게 친구를 사귄다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 968,
+		"pk": 1068,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "E",
@@ -812,11 +812,11 @@
 			"key": 1,
 			"question": "Know how to captivate people.",
 			"question_ko": "나는 다른 사람들을 매료시키는 방법을 안다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 969,
+		"pk": 1069,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "E",
@@ -824,11 +824,11 @@
 			"key": 1,
 			"question": "Feel at ease with people.",
 			"question_ko": "나는 다른 사람들과 같이 있을 때 오히려 편안함을 느낀다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 970,
+		"pk": 1070,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "E",
@@ -836,11 +836,11 @@
 			"key": 1,
 			"question": "Am skilled in handling social situations.",
 			"question_ko": "나는 여러 사회적 상황에 잘 대처하는 편이다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 971,
+		"pk": 1071,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "E",
@@ -848,11 +848,11 @@
 			"key": -1,
 			"question": "Don't talk a lot.",
 			"question_ko": "나는 말이 적은 편이다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 972,
+		"pk": 1072,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "E",
@@ -860,11 +860,11 @@
 			"key": -1,
 			"question": "Keep in the background.",
 			"question_ko": "나는 나서지 않는 편이다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 973,
+		"pk": 1073,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "E",
@@ -872,11 +872,11 @@
 			"key": -1,
 			"question": "Have little to say.",
 			"question_ko": "나는 보통 할 말이 별로 없다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 974,
+		"pk": 1074,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "E",
@@ -884,11 +884,11 @@
 			"key": -1,
 			"question": "Don't like to draw attention to myself.",
 			"question_ko": "나는 나에게 관심이나 이목이 집중되는 것을 좋아하지 않는다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 975,
+		"pk": 1075,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "E",
@@ -896,11 +896,11 @@
 			"key": -1,
 			"question": "Am quiet around strangers.",
 			"question_ko": "나는 모르는 사람들 가운데 있으면 조용해진다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 976,
+		"pk": 1076,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "E",
@@ -908,11 +908,11 @@
 			"key": -1,
 			"question": "Find it difficult to approach others.",
 			"question_ko": "나는 주변에 모르는 사람들이 많이 있을 때 불편함을 느끼는 편이다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 977,
+		"pk": 1077,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "E",
@@ -920,11 +920,11 @@
 			"key": -1,
 			"question": "Often feel uncomfortable around others.",
 			"question_ko": "나는 내 감정이나 기분을 잘 표현하지 않는다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 978,
+		"pk": 1078,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "E",
@@ -932,11 +932,11 @@
 			"key": -1,
 			"question": "Bottle up my feelings.",
 			"question_ko": "나는 나를 잘 드러내지 않는 사람이다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 979,
+		"pk": 1079,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "E",
@@ -944,11 +944,11 @@
 			"key": -1,
 			"question": "Am a very private person.",
 			"question_ko": "나는 다른 사람들이 앞장서주기를 기다린다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 980,
+		"pk": 1080,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "E",
@@ -956,11 +956,11 @@
 			"key": -1,
 			"question": "Wait for others to lead the way.",
 			"question_ko": "나는 다른 사람들에게 먼저 다가가 말을 거는 것이 어렵다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 981,
+		"pk": 1081,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "O",
@@ -968,11 +968,11 @@
 			"key": 1,
 			"question": "Have a rich vocabulary.",
 			"question_ko": "나는 어휘력이 풍부하다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 982,
+		"pk": 1082,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "O",
@@ -980,11 +980,11 @@
 			"key": 1,
 			"question": "Have a vivid imagination.",
 			"question_ko": "나는 생생한 상상력을 가지고 있다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 983,
+		"pk": 1083,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "O",
@@ -992,11 +992,11 @@
 			"key": 1,
 			"question": "Have excellent ideas.",
 			"question_ko": "나는 굉장한 아이디어들을 가지고 있다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 984,
+		"pk": 1084,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "O",
@@ -1004,11 +1004,11 @@
 			"key": 1,
 			"question": "Am quick to understand things.",
 			"question_ko": "나는 무엇이든 매우 빨리 이해한다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 985,
+		"pk": 1085,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "O",
@@ -1016,11 +1016,11 @@
 			"key": 1,
 			"question": "Use difficult words.",
 			"question_ko": "나는 수준 높은 단어를 쓰는 편이다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 986,
+		"pk": 1086,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "O",
@@ -1028,11 +1028,11 @@
 			"key": 1,
 			"question": "Spend time reflecting on things.",
 			"question_ko": "나는 골똘히 생각하며 시간을 보낼 때가 많다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 987,
+		"pk": 1087,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "O",
@@ -1040,11 +1040,11 @@
 			"key": 1,
 			"question": "Am full of ideas.",
 			"question_ko": "나는 아이디어가 매우 풍부하다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 988,
+		"pk": 1088,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "O",
@@ -1052,11 +1052,11 @@
 			"key": 1,
 			"question": "Carry the conversation to a higher level.",
 			"question_ko": "나는 수준 높은 대화를 하려고 한다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 989,
+		"pk": 1089,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "O",
@@ -1064,11 +1064,11 @@
 			"key": 1,
 			"question": "Catch on to things quickly.",
 			"question_ko": "나는 뭐든지 금방 이해한다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 990,
+		"pk": 1090,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "O",
@@ -1076,11 +1076,11 @@
 			"key": 1,
 			"question": "Can handle a lot of information.",
 			"question_ko": "나는 많은 양의 정보도 잘 처리하는 편이다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 991,
+		"pk": 1091,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "O",
@@ -1088,11 +1088,11 @@
 			"key": 1,
 			"question": "Love to think up new ways of doing things.",
 			"question_ko": "나는 새로운 일처리 방식을 생각해내는 것을 좋아한다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 992,
+		"pk": 1092,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "O",
@@ -1100,11 +1100,11 @@
 			"key": 1,
 			"question": "Love to read challenging material.",
 			"question_ko": "나는 단순한 글보다 어려운 글을 읽는 것을 즐긴다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 993,
+		"pk": 1093,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "O",
@@ -1112,11 +1112,11 @@
 			"key": 1,
 			"question": "Am good at many things.",
 			"question_ko": "나는 많은 일들도 능숙하게 하는 편이다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 994,
+		"pk": 1094,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "O",
@@ -1124,11 +1124,11 @@
 			"key": -1,
 			"question": "Have difficulty understanding abstract ideas.",
 			"question_ko": "나는 추상적인 것을 잘 이해하지 못한다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 995,
+		"pk": 1095,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "O",
@@ -1136,11 +1136,11 @@
 			"key": -1,
 			"question": "Am not interested in abstract ideas.",
 			"question_ko": "나는 복잡한 것은 질색이다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 996,
+		"pk": 1096,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "O",
@@ -1148,11 +1148,11 @@
 			"key": -1,
 			"question": "Do not have a good imagination.",
 			"question_ko": "나는 상상력이 좋지 않다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 997,
+		"pk": 1097,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "O",
@@ -1160,11 +1160,11 @@
 			"key": -1,
 			"question": "Try to avoid complex people.",
 			"question_ko": "나는 생각이 복잡한 사람들과 별로 어울리고 쉽지 않다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 998,
+		"pk": 1098,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "O",
@@ -1172,11 +1172,11 @@
 			"key": -1,
 			"question": "Have difficulty imagining things.",
 			"question_ko": "나는 무언가를 상상하는 것을 잘 하지 못한다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 999,
+		"pk": 1099,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "O",
@@ -1184,11 +1184,11 @@
 			"key": -1,
 			"question": "Avoid difficult reading material.",
 			"question_ko": "나는 읽기 어려운 것을 피하려고 한다.",
-			"testname": 100
+			"testname": 50
 		}
 	},
 	{
-		"pk": 1000,
+		"pk": 1100,
 		"model": "bigfive.test",
 		"fields": {
 			"label": "O",
@@ -1196,7 +1196,7 @@
 			"key": -1,
 			"question": "Will not probe deeply into a subject.",
 			"question_ko": "나는 어떤 주제에 대해서 깊이 파고드는 편은 아니다.",
-			"testname": 100
+			"testname": 50
 		}
 	}
 ]

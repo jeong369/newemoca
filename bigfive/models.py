@@ -15,6 +15,9 @@ class Test(models.Model) :
 	key = models.IntegerField(blank=False)
 	score_users = models.ManyToManyField(User, through='Score', related_name='score_tests')
 
+	def __str__(self) :
+		return f"{self.pk} : {self.label}-{self.facet}"
+
 class Score(models.Model) :
 	test = models.ForeignKey(Test, on_delete=models.CASCADE)
 	users = models.ForeignKey(User, on_delete=models.CASCADE)

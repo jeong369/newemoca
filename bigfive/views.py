@@ -3,9 +3,10 @@ from django.http import JsonResponse, HttpResponseBadRequest
 from accounts.models import User
 from accounts.forms import UserCreationForm
 from .models import Test, Score, Adjective
+import random
 
 # serailizers
-from .serializers import TestSerializer, SearchTestSerializer, SearchTestTypeSerializer
+from .serializers import TestSerializer, SearchTestSerializer, SearchTestTypeSerializer, SearchUserTestSerializer
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
@@ -31,10 +32,74 @@ def makefor(q) :
     return q_list
 
 
+def qtol(query) :
+    result_list = []
+    for q in query :
+        result_list.append(q)
+    return result_list
+
+def choicetest(test_num) :
+    label_set = ['N', 'E', 'O', 'A', 'C']
+
+    # 50개는 각 특성별 key별 5개씩 총 50개
+    # 100개는 각 특성별 key별 10개씩 총 100개
+    testlists = []
+    
+    for label in label_set :
+        plus_tests = Test.objects.filter(testname=test_num, label=label, key=1).exclude(question_ko='').order_by('?')[:(test_num/10)]
+        minus_tests = Test.objects.filter(testname=test_num, label=label, key=-1).exclude(question_ko='').order_by('?')[:(test_num/10)]
+        testlists += qtol(plus_tests) + qtol(minus_tests)
+        print(len(testlists))
+
+    return testlists
+
+def testchoice(test_num) :
+    label_set = ['N', 'E', 'O', 'A', 'C']
+    facets = [['Anxiety', 'Anger', 'Depression', 'Self-Consciousness', 'Immoderation', 'Vulnerability'],
+                ['Friendliness', 'Gregariousness', 'Assertiveness', 'Activity-Level', 'Excitement-Seeking', 'Cheerfulness'],
+                ['Imagination', 'Artistic-Interests', 'Emotionality', 'Adventurousness', 'Intellect', 'Liberalism'],
+                ['Trust', 'Morality', 'Altruism', 'Cooperation', 'Modesty', 'Sympathy'],
+                ['Self-Efficacy', 'Orderliness', 'Dutifulness', 'Achievement-Striving', 'Self-Discipline', 'Cautiousness']]
+    if test_num == 120 :
+        label_count = [[(4, 0), (3, 1), (3, 1), (3, 1), (1, 3), (3, 1)],
+                        [(3, 1), (2, 2), (3, 1), (3, 1), (4, 0), (4, 0)],
+                        [(4, 0), (2, 2), (2, 2), (1, 3), (1, 3), (2, 2)],
+                        [(3, 1), (0, 4), (2, 2), (0, 4), (0, 4), (2, 2)],
+                        [(4, 0), (1, 3), (2, 2), (2, 2), (2, 2), (0, 4)]]
+    elif test_num == 240 :
+        label_count = [[(4, 4), (5, 3), (6, 2), (5, 3), (4, 4), (3, 5)],
+                        [(6, 2), (4, 4), (4, 4), (5, 3), (6, 2), (4, 4)],
+                        [(3, 5), (5, 3), (5, 3), (3, 5), (5, 3), (3, 5)],
+                        [(5, 3), (3, 5), (5, 3), (3, 5), (4, 4), (6, 2)],
+                        [(5, 3), (3, 5), (6, 2), (5, 3), (4, 4), (5, 3)]]
+    elif test_num == 300 :
+        label_count = [[(5, 5), (5, 5), (7, 3), (6, 4), (5, 5), (5, 5)],
+                        [(5, 5), (5, 5), (5, 5), (5, 5), (8, 2), (8, 2)],
+                        [(6, 4), (5, 5), (5, 5), (4, 6), (5, 5), (3, 7)],
+                        [(6, 4), (2, 8), (5, 5), (3, 7), (4, 6), (4, 6)],
+                        [(6, 4), (5, 5), (5, 5), (7, 3), (5, 5), (3, 7)]]
+    
+    testlists= []
+    for label in label_set :
+        leng = 0
+        idx = label_set.index(label)
+        for facet in facets[idx] :
+            idxx = facets[idx].index(facet)
+            p = label_count[idx][idxx][0]
+            q = label_count[idx][idxx][1]
+                
+            plus_tests = Test.objects.filter(testname=test_num, label=label, facet=facet, key=1).order_by('?')[:p]
+            minus_tests = Test.objects.filter(testname=test_num, label=label, facet=facet, key=-1).order_by('?')[:q]
+            leng += len(plus_tests) + len(minus_tests)
+            testlists += qtol(plus_tests) + qtol(minus_tests)
+        print(leng, '-------------------')
+    print(len(testlists), testlists)
+    return testlists
+
 # 4. 각 설문에 해당하는 질문 넘기기
+@api_view(['GET'])
 def gettest(request, test_num) :
     print(test_num, type(test_num))
-
     # db test에 OCEAN을 저장해놓고 불러와서 score랑 매칭
     # 1) TEST 모두 저장 
     # 2) pk별로 저장 될 model(test_pk, score, user_pk)
@@ -42,33 +107,19 @@ def gettest(request, test_num) :
     # 12문항
     if test_num == 12 :
         tests = Test.objects.filter(testname=12)
-        print(tests)
         testlists = makefor(tests)
+
     # 50, 100개 랜덤으로 뽑기 문항
     elif test_num == 50 or test_num == 100 :
-        if test_num == 50 :
-            tests = Test.objects.filter(testname=100)
-            # 랜덤으로 50개 골라야 함
-
-        if test_num == 100 :
-            tests = Test.objects.filter(testname=100)
-            testlists = makefor(tests)
-
+        testlsts = choicetest(test_num)
     
     # 120, 300개 랜덤으로 뽑기 문항
-    elif test_num == 120 or test_num == 300 :
+    elif test_num == 120 or test_num == 240 or test_num == 300 :
+        testlists = testchoice(test_num)
 
-        if test_num == 120 :
-            tests = Test.objects.filter(testname=300)
-            # 120개 랜덤으로 골라야 함
-            testlists = []
-        if test_num == 300 :
-            tests = Test.objects.filter(testname=300)
-            testlists = makefor(tests)
-
-    
     context = {'test_lists' : testlists}
     return render(request, 'bigfive/test.html', context)
+
 
 # 4. 각 설문 문항 저장
 def savescore(request, test_pk, score_grade, user_pk) :
@@ -90,9 +141,10 @@ def savescore(request, test_pk, score_grade, user_pk) :
 
 # 5. 결과 보여주기
 def result(request, user_pk, test_num) :
-    # test_num = test 번호
-    # scores = get_object_or_404(User, pk=user_pk).score_sets
-    # print(scores)
+    user = get_object_or_404(User, pk=user_pk)
+    tests = Test.objects.filter(testname=test_num)
+    
+
 
     context = {}
     return render(request, 'bigfive/result.html', context)

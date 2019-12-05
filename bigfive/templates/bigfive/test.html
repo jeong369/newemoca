@@ -37,7 +37,11 @@
                 <li id="q{{forloop.counter}}" style="display:list-item; {% if forloop.counter != 1 %} visibility:hidden; {% else %} visibility: visible;{% endif %}">
                     <div class="qeustion_wrapper" >
                         <div class="question_{{test.pk}}">
-                            <b>{{ test.question }}</b>
+                            {% if test.question_ko %}
+                                <b>{{ test.question_ko }}</b>
+                            {% else %}
+                                <b>{{ test.question }}</b>
+                            {% endif %}
                         </div>
                         <div class="answer" value="1" v-on:click="keepscore({{test.pk}}, {{forloop.counter}}, 1)">전혀 그렇지 않다.</div>
                         <div class="answer" value="2" v-on:click="keepscore({{test.pk}}, {{forloop.counter}}, 2)">그렇지 않다.</div>
@@ -72,7 +76,8 @@
         methods : {
             async goresult(user_pk, test_num) {
                 console.log("result")
-                location.href = `/bigfive/result/${user_pk}/${test_num}`
+                
+                // location.href = `/bigfive/result/${user_pk}/${test_num}`
             },
             async keepscore(test_pk, idx, value) {
                 // console.log("들어옴")
