@@ -147,11 +147,51 @@ def result(request, user_pk, test_num) :
     user = get_object_or_404(User, pk=user_pk)
     # tests = Test.objects.filter(testname=test_num)
     scores = Score.objects.filter(users=user)
+    # 해당 설문에 대한 object 저장
     for score in scores :
         if score.test.testname == test_num :
             resultlists.append(score)
     print(resultlists)
-    context = {'resultlists' : resultlists}
+
+    # 해당 설문에 대한 점수 계산한 결과 저장
+    if test_num == 12 :
+        label_score_set = [0]*5
+        label_set = ['N', 'E', 'O', 'A', 'C']
+        for score in resultlists :
+            print(score.test.label, score.grade)
+            idx = label_set.index(score.test.label)
+            print(idx)
+            if score.test.key == 1 :
+                label_score_set[idx] += score.grade
+            else :
+                label_score_set[idx] += (6-score.grade)
+            print('22', label_score_set)
+        print(label_score_set)
+    
+        # 검사 결과 [https://persket.com/319]
+        # E, N, C 
+        # 2~4점 낮음, 5~6점 중간 7~8점 중상 9~10 높음
+        # A(남성) 9점이하 낮음, 10~11점 중하 12~13점 중상 14~15점 높음
+        # A(여성) 11점이하 낮음, 12~13점 중하 14점 중상 15점 높음
+        # O
+        # 8점이하 낮음 9~10점 중하 11~12점 중상 13~15점 높음
+
+    else :
+        label_score_set = [0]*5
+        label_set = ['N', 'E', 'O', 'A', 'C']
+        for score in resultlists :
+            print(score.test.label, score.grade)
+            idx = label_set.index(score.test.label)
+            print(idx)
+            if score.test.key == 1 :
+                label_score_set[idx] += score.grade
+            else :
+                label_score_set[idx] += (6-score.grade)
+            print('22', label_score_set)
+        print(label_score_set)
+   
+
+    context = {'resultlists' : resultlists, 'score_set':label_score_set}
     return render(request, 'bigfive/result.html', context)
 
 
