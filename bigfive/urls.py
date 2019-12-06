@@ -16,4 +16,5 @@ urlpatterns = [
     path('test/', views.TestGetSerializer, name="getTest"),
     path('test/<int:test_pk>/', views.TestInfoSerializer, name='getTestInfo'),
     path('testtype/<int:test_num>/', views.TestTypeGetSerializer, name='getTestType'),
+    path('score/<int:user_pk>/<int:test_num>/', views.ScoreGetSerializer, name="getScore"),
 ]

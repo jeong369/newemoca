@@ -6,7 +6,7 @@ from .models import Test, Score, Adjective
 import random
 
 # serailizers
-from .serializers import TestSerializer, SearchTestSerializer, SearchTestTypeSerializer, SearchUserTestSerializer
+from .serializers import TestSerializer, SearchTestSerializer, SearchTestTypeSerializer, SearchUserTestSerializer, ScoreSerializer
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
@@ -101,6 +101,8 @@ def testchoice(test_num) :
 def gettest(request, test_num) :
     print(test_num, type(test_num))
     # db test에 OCEAN을 저장해놓고 불러와서 score랑 매칭
+    # 0) 해당 테스트에 결과값이 있으면 지우기
+
     # 1) TEST 모두 저장 
     # 2) pk별로 저장 될 model(test_pk, score, user_pk)
 
@@ -111,7 +113,7 @@ def gettest(request, test_num) :
 
     # 50, 100개 랜덤으로 뽑기 문항
     elif test_num == 50 or test_num == 100 :
-        testlsts = choicetest(test_num)
+        testlists = choicetest(test_num)
     
     # 120, 300개 랜덤으로 뽑기 문항
     elif test_num == 120 or test_num == 240 or test_num == 300 :
@@ -141,12 +143,15 @@ def savescore(request, test_pk, score_grade, user_pk) :
 
 # 5. 결과 보여주기
 def result(request, user_pk, test_num) :
+    resultlists = []
     user = get_object_or_404(User, pk=user_pk)
-    tests = Test.objects.filter(testname=test_num)
-    
-
-
-    context = {}
+    # tests = Test.objects.filter(testname=test_num)
+    scores = Score.objects.filter(users=user)
+    for score in scores :
+        if score.test.testname == test_num :
+            resultlists.append(score)
+    print(resultlists)
+    context = {'resultlists' : resultlists}
     return render(request, 'bigfive/result.html', context)
 
 
@@ -171,4 +176,18 @@ def TestInfoSerializer(request, test_pk):
 def TestTypeGetSerializer(request, test_num):
     tests = Test.objects.filter(testname=test_num)
     serializer = SearchTestTypeSerializer(tests, many=True)
+    return Response(serializer.data)
+
+@api_view(['GET'])
+def ScoreGetSerializer(request, user_pk, test_num) :
+    # test = get_object_or_404(Test, testname=test_num)
+    user = get_object_or_404(User, pk=user_pk)
+    scores = Score.objects.filter(users=user)
+    print('1', scores)
+    for score in scores :
+        if score.test.testname == test_num :
+            score.grade = 0
+            score.save()
+    print('2', scores)
+    serializer = ScoreSerializer(scores, many=True)
     return Response(serializer.data)

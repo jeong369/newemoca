@@ -47,7 +47,7 @@ def UserGetSerializer(request) :
 
 @api_view(['GET'])
 def UserInfoSerializer(request, user_pk):
-    user = get_object_or_404(User, pk=user_pk)
+    user = User.objects.filter(pk=user_pk)
     print(user)
     serializer = SearchUserSerializer(user, many=True)
     return Response(serializer.data)

@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Test
+from .models import Test, Score
 
 class TestSerializer(serializers.ModelSerializer):
     class Meta :
@@ -24,3 +24,8 @@ class SearchUserTestSerializer(serializers.ModelSerializer):
     class Meta : 
         model = Test
         fields = ['label', 'facet', 'question', 'question_ko', 'key', 'testname', 'resultscore']
+
+class ScoreSerializer(serializers.ModelSerializer):
+    class Meta :
+        model = Score
+        fields = ('grade',)
