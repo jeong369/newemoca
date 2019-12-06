@@ -26,12 +26,93 @@
 <div id="bigfiveresult">
     <h1 class="" style="text-align:center; margin-top: 5rem; margin-bottom: 5rem;">당신의 성향은....</h1>
     <hr>
-    <div class="row">
+    <div class="row" style="display:none;">
         {% for result in resultlists %}
             {{result.grade}}
         {% endfor %}
-        {{score_set}}
         
     </div>
+    <p id="scoreset" style="display: none;">{{score_set}}</p>
+    <div class="showchar " style="display: grid; grid-gap: 10px;">
+        <div style="grid-row: 1/2; grid-row: 1;"><canvas class="col" id="doughnutChart"></canvas></div>
+        <hr>
+        <div style="grid-row:2/3 grid-row: 1; margin-top:20px;"><canvas class="col" id="radarChart"></canvas></div>
+
+    </div>
 </div>
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+<script>
+//radar
+var scoreset = document.getElementById("scoreset").innerHTML
+scoreset = scoreset.slice(1, -1).split(',').map(Number)
+const reducer = function(accumulator, currentValue) {
+    return accumulator + currentValue
+}
+sum_score = scoreset.reduce(reducer)
+console.log(sum_score)
+let avg_scoreset = []
+scoreset.forEach(score => {
+    // console.log(score/sum_score*100)
+    // console.log(Math.round(score/sum_score*100))
+    avg_scoreset.push(Math.round(score/sum_score*100))
+});
+console.log(avg_scoreset.reduce(reducer))
+
+
+var ctxR = document.getElementById("radarChart").getContext('2d');
+var myRadarChart = new Chart(ctxR, {
+    type: 'radar',
+    data: {
+        labels: ["신경성", "외향성", "개방성", "친화성", "성실성"],
+        datasets: [{
+                label: "My First dataset",
+                // data: [65, 59, 90, 81, 56],
+                data : scoreset,
+                backgroundColor: [
+                'rgba(102, 204, 102, .2)',
+                ],
+                borderColor: ['rgba(102, 204, 102, .7)',],
+                borderWidth: 2
+            },
+            // {   label: "My Second dataset",
+            //     data: [28, 48, 40, 19, 96, 27, 100],
+            //     backgroundColor: ['rgba(0, 250, 220, .2)',],
+            //     borderColor: ['rgba(0, 213, 132, .7)',],
+            //     borderWidth: 2
+            // }
+        ]
+    },
+    options: {
+        responsive: true,
+        scale: {
+            ticks: {
+                beginAtZero: true,
+                max: 10,
+                min: 0,
+                stepSize: 1
+            }
+        }
+        }
+    });
+
+//doughnut
+var ctxD = document.getElementById("doughnutChart").getContext('2d');
+var myLineChart = new Chart(ctxD, {
+    type: 'doughnut',
+    data: {
+        labels: ["신경성", "외향성", "개방성", "친화성", "성실성"],
+        datasets: [{
+            data: avg_scoreset,
+            backgroundColor: ["#FF6666", "#FFFF99", "#33CC33", "#FFCC66", "#33CCFF"],
+            hoverBackgroundColor: ["#FF0000", "#FFFF66", "#339933", "#FFCC00", "#0066CC"]
+        }]
+    },
+    options: {
+        responsive: true
+    }
+});
+</script>
 {% endblock %}
