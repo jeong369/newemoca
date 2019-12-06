@@ -37,7 +37,8 @@
         <div style="grid-row: 1/2; grid-row: 1;"><canvas class="col" id="doughnutChart"></canvas></div>
         <hr>
         <div style="grid-row:2/3 grid-row: 1; margin-top:20px;"><canvas class="col" id="radarChart"></canvas></div>
-
+        <hr>
+        <canvas id="barChart"></canvas>
     </div>
 </div>
 
@@ -112,6 +113,48 @@ var myLineChart = new Chart(ctxD, {
     },
     options: {
         responsive: true
+    }
+});
+
+//bar
+var ctxB = document.getElementById("barChart").getContext('2d');
+var myBarChart = new Chart(ctxB, {
+    type: 'bar',
+    data: {
+        labels: ["신경성", "외향성", "개방성", "친화성", "성실성"],
+        datasets: [{
+            label: '당신의 성향은?',
+            data: scoreset,
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true,
+                    max: 10,
+                    min: 0,
+                    stepSize: 1
+                }
+            }]
+        }
     }
 });
 </script>

@@ -37,6 +37,11 @@
 
 {% block body %}
 <div id="signup">
+    <h1 class="" style="text-align:center; margin-top: 5rem; margin-bottom: 5rem;">성격 테스트</h1>
+    <text style="font-size: 20px;">
+        이 무료 테스트를 통하여 자신의 성격을 알아보세요. 
+    </text>
+    <hr>
     <form class="modal-contentsignup" action="/accounts/create/" method="POST">
       {% csrf_token %}
       <h1 style="text:bold;text-align:center">당신의 정보를 알려주세요</h1>
@@ -73,6 +78,12 @@
         </div>
       </div>
     </form>
+    <hr>
+    <text>
+        ※ 아래와 같은 논문을 참고한 사이트 IPIP를 인용하여 작성된 설문입니다. ※<br>
+        Goldberg, L. R. (1992). The development of markers for the Big-Five factor structure. Psychological Assessment, 4, 26-42.
+        Johnson, J. A. (2014). Measuring thirty facets of the Five Factor Model with a 120-item public domain inventory: Development of the IPIP-NEO-120. Journal of Research in Personality, 51, 78-89.
+    </text>
 </div>
 <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
 <script>
