@@ -68,13 +68,16 @@ def create(request) :
                 print('dkdk')
                 info = info_form.save(commit=False)
                 print(info)
+                print(type(request.POST.get('content')))
+                print(type(request.POST.get('title')))
+
                 info.title = request.POST.get('title')
                 info.content = request.POST.get('content')
                 info.available = request.POST.get('available')
                 info.file = request.FILES.get('file')
-                infom = info.save()
+                inform = info.save()
                 print(info.title)
-
+                print(inform)
                 getinfo = get_object_or_404(Info, title=info.title, content=info.content, available=info.available, file=info.file)
                 print(getinfo)
 
