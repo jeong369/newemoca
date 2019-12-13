@@ -92,7 +92,7 @@ DATABASES = {
         'NAME': 'emoca',  #mysql
         'USER': 'root', #root
         'PASSWORD': '5431', #1234
-        'HOST': '', #공백으로 냅두면 default localhost
+        'HOST': '143.248.100.60', #공백으로 냅두면 default localhost
         'PORT': '3307' #공백으로 냅두면 default 3306
     }
 }
