@@ -65,7 +65,7 @@ ROOT_URLCONF = 'emoca.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'emoca', 'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'emoca')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -92,8 +92,9 @@ DATABASES = {
         'NAME': 'emoca',  #mysql
         'USER': 'root', #root
         'PASSWORD': '5431', #1234
-        'HOST': '143.248.100.60', #공백으로 냅두면 default localhost
-        'PORT': '3307' #공백으로 냅두면 default 3306
+        'HOST': '', #공백으로 냅두면 default localhost
+        'PORT': '3307' #공백으로 냅두면 default 3306,
+        
     }
 }
 
