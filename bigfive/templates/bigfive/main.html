@@ -6,10 +6,11 @@
         width:100%;
         margin-left: 50px;
         margin-right: 50px;
+        
     }
     #bigfivemain .row {
         display: flex;
-        height: 60em;
+        height: 10em;
         text-align: center;
         
     }    
@@ -28,8 +29,13 @@
 
 {% block body %}
 <div id="bigfivemain">
-    <h1 class="" style="text-align:center; margin-top: 5rem; margin-bottom: 5rem;">성격 테스트</h1>
-    <text style="font-size: 20px;">
+    <h1 class="" style="text-align:center; margin-top: 5rem; margin-bottom: 1rem;">성격 테스트</h1>
+    <text style="margin-bottom: 10px;">
+        ※ 아래와 같은 논문을 참고한 사이트 IPIP를 인용하여 작성된 설문입니다. ※<br>
+        Goldberg, L. R. (1992). The development of markers for the Big-Five factor structure. Psychological Assessment, 4, 26-42.
+        Johnson, J. A. (2014). Measuring thirty facets of the Five Factor Model with a 120-item public domain inventory: Development of the IPIP-NEO-120. Journal of Research in Personality, 51, 78-89.
+    </text><br>
+    <text style="font-size: 20px; margin-top:10px;">
         이 무료 테스트를 통하여 자신의 성격을 알아보세요. 
     </text>
     <hr>
@@ -38,11 +44,6 @@
         <button type="button" class="startBtn" onClick="location.href='/accounts/create/'">시작하기</button>
     </div>
     <hr>
-    <text>
-        ※ 아래와 같은 논문을 참고한 사이트 IPIP를 인용하여 작성된 설문입니다. ※<br>
-        Goldberg, L. R. (1992). The development of markers for the Big-Five factor structure. Psychological Assessment, 4, 26-42.
-        Johnson, J. A. (2014). Measuring thirty facets of the Five Factor Model with a 120-item public domain inventory: Development of the IPIP-NEO-120. Journal of Research in Personality, 51, 78-89.
-    </text>
 
 </div>
 {% endblock %}

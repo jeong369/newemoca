@@ -6,6 +6,7 @@
         width:100%;
         margin-left: 50px;
         margin-right: 50px;
+        padding: 50px 50px 50px 50px;
     }
     .connectedSpace {
         margin-top: 10rem;
@@ -33,12 +34,13 @@
         line-height: 28px;
     } */
     .goToNotice {
-        width: 350px;
-        font-size: 20px;
-        line-height: 21px;
         text-align: center;
         margin-top: 24px;
-        color: grey;
+        background-color:cornflowerblue;
+        height: 50px;
+        width: 200px;
+        border-radius: 20px;
+        color: white;
     }
     img {
         /* display: block;
@@ -55,6 +57,9 @@
     }
     #contact {
         display: none;
+    }
+    .startBtn {
+
     }
 </style>
 
@@ -76,7 +81,7 @@
     </div>
     <div class="getStarted">
         <!-- <a class="getStartedApp withSpecDemo" href="https://app.zeplin.io/register">모바일 앱으로 바로가기</a> -->
-        <a href="/notice/lists/1" class="goToNotice visible">대화 시작하기 →</a>
+        <button type="button" class="goToNotice visible" onclick="location.href='/notice/lists/1'">대화 시작하기</button>
     </div>
 
     <section class="page-section" id="contact" >
