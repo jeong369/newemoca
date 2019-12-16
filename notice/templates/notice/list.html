@@ -1,81 +1,35 @@
 {% extends 'base.html' %}
 
 {% block style %} 
-<style>
-    #notice {
-        width:100%;
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-    .container {
-        margin-top: 250px;
-;
-    }
-    #notice .row {
-        margin-top: 20px;
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-    .th-sm {
-        text-align: center;
-        vertical-align: middle;
-        width:fit-content;
-    }
-    td {
-        text-align: center;
-        vertical-align: middle;
-    }
-</style>
 
 
 {% endblock %}
 
 {% block body %}
 {% load static %}
-<header class="about">
+<header class="list" id="list">
     <div class="container h-100">
         <div class="row h-100">
         <div class="col-lg-12 my-auto">
-            <div class="about-content mx-auto">
-            <h1 class="mb-5"><U>공지사항</U></h1>
+            <div class="list-content mx-auto">
+            <h1 class="mb-5">공지사항</h1>
             
             {% if request.user.is_staff %}
-                <div class="row d-flex justify-content-end">
+                <div class="createPost mb-5">
                     <button onClick="location.href='/notice/create/'">새글작성</button>
                 </div>
             {% else %}
-                <div class="row" style="visibility: hidden;">
+                <div class="createPost mb-5" style="visibility: hidden;">
                     <button onClick="location.href='/notice/create/'">새글작성</button>
                 </div>
             {% endif %}
-
-
-            <h2 class="mb-5">인간과 유사하게 소통하면서 상대방의 감정을 추론하고 판단한 결과를 기반으로 한 감성적 대화를 통해 정서적인 공감대를 형성할 수 있는 감성지능을 개발합니다.</h2>
-            <h4 class="mb-2">첫째, 상대방의 표정, 말투, 목소리 등을 통해 감정을 정확하게 판단하고 추론합니다.</h4><br>
-            <h4 class="mb-2">둘째, 상대방의 나이, 성별에 따라 대응하는 말투, 내용이 달라지며 현재의 감정 상태에 맞는 적절한 감정 대응이 가능하도록 합니다.</h4><br>
-            <h4 class="mb-2">셋째, 더 나아가 스트레스, 정서적 불안 등을 인식하고 학습 및 추론하여 더 나은 응용 서비스를 제공합니다.</h4><br>
-            <h4 class="mb-2">넷째,  적절한 대화를 위한 윤리적 판단 기준과 조치 등을 연구합니다.</h4><br>
-            </div>
-        </div>
-        </div>
-    </div>
-</header>
-
-
-    <div id="notice">
-        <h1 class="" style="text-align:center; margin-top: 5rem; margin-bottom: 3rem;"> 공지사항 </h1>
-        <hr>
-        
-        
-                
-        <div class="row">
 
             <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
                 <thead>
                     <tr>
                         <th class="th-sm" style="width:5%">번호</th>
                         <th class="th-sm" >제목</th>
-                        <th class="th-sm" style="width:20%">날짜</th>
+                        <th class="th-sm" style="width:25%">날짜</th>
                         {% if request.user.is_staff %}
                             <th class="th-sm" style="width:10%">공개여부</th>
                         {% else %}
@@ -104,99 +58,95 @@
                         {% endif %}
                     </tr>
                     {% endfor %}
-                    
                 </tbody>
-                
             </table>
-        </div>
-        <div class="row">
 
             <nav aria-label="Page navigation example">
                 <ul class="pagination pagination-sm">
                     <li class="page-item"><a class="page-link" href="#" @click="previous">Previous</a></li>
-                   
+                    
                     {% for count in contents_length %}
                         <li id="page-{{count}}" class="page-item"><a class="page-link" href="#" @click="listchange({{ count }})">{{ count }}</a></li>
                     {% endfor %}
-                    <!-- {% if contents|length == 11 %}
-                    <p>dd</p>
-                    {% endif %} -->
-                    
+            
                     <li class="page-item"><a class="page-link" href="#" @click="next({{pagecount}})">Next</a></li>
                 </ul>
             </nav>
+            </div>
+        </div>
         </div>
     </div>
+</header>
 
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script>
-        var noticeapp = new Vue({
-            el: '#notice',
-            delimiters: ['[[', ']]'],
-            data: {
-                message : '',
-                href: '',
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    var noticeapp = new Vue({
+        el: '#list',
+        delimiters: ['[[', ']]'],
+        data: {
+            message : '',
+            href: '',
+        },
+        methods : {
+            listchange(pagenum) {
+                location.href=`/notice/lists/${pagenum}`
             },
-            methods : {
-                listchange(pagenum) {
-                    location.href=`/notice/lists/${pagenum}`
-                },
-                previous() {
-                    var url = window.location.href
-                    var url2 = url.split('http://127.0.0.1:8000/notice/lists/')[1]
-                    url2 = url2.split('/')[0]
-                    url2 *= 1
-                    if (url2 > 1) {
-                        url2 -= 1
-                    }
-                    location.href=`/notice/lists/${url2}`
-                },
-                next(pagecount) {
-                    var url = window.location.href
-                    var url2 = url.split('http://127.0.0.1:8000/notice/lists/')[1]
-                    url2 = url2.split('/')[0]
-                    url2 *= 1
-                    if (url2 < pagecount) {
-                        url2 += 1
-                    }
-                    location.href=`/notice/lists/${url2}`
-                },
-                oxdefine(id) {
-                    console.log(id)
-                    const oxbutton = document.querySelector(`.ox-button-${id}`)
-                    const title = document.querySelector(`#title_${id}`)
-                    console.log(oxbutton, title)
-                    axios.get(`/notice/lists/${id}/available/`)
-                        .then(function(response) {
-                            if (response.data['is_ox'] == '0') {
-                                oxbutton.classList.remove('fa-times')
-                                oxbutton.classList.remove('fas')
-                                oxbutton.classList.add('fa-circle')
-                                oxbutton.classList.add('far')
-                                title.innerHTML = `<p>${response.data['info_title']}</p>`
-
-                            } else {
-                                oxbutton.classList.remove('fa-circle')
-                                oxbutton.classList.remove('far')
-                                oxbutton.classList.add('fa-times')
-                                oxbutton.classList.add('fas')
-                                title.innerHTML = `<a href="/notice/detail/${id}">${response.data['info_title']}</a>`
-                            }
-                        })
-                },
-                movedetail(id) {
-                    console.log(id)
+            previous() {
+                var url = window.location.href
+                var url2 = url.split('http://127.0.0.1:8000/notice/lists/')[1]
+                url2 = url2.split('/')[0]
+                url2 *= 1
+                if (url2 > 1) {
+                    url2 -= 1
                 }
-            
+                location.href=`/notice/lists/${url2}`
             },
-            mounted() {
-                if (this.message) {
-                        alert(this.message)
-                    }
+            next(pagecount) {
+                var url = window.location.href
+                var url2 = url.split('http://127.0.0.1:8000/notice/lists/')[1]
+                url2 = url2.split('/')[0]
+                url2 *= 1
+                if (url2 < pagecount) {
+                    url2 += 1
+                }
+                location.href=`/notice/lists/${url2}`
+            },
+            oxdefine(id) {
+                console.log(id)
+                const oxbutton = document.querySelector(`.ox-button-${id}`)
+                const title = document.querySelector(`#title_${id}`)
+                console.log(oxbutton, title)
+                axios.get(`/notice/lists/${id}/available/`)
+                    .then(function(response) {
+                        if (response.data['is_ox'] == '0') {
+                            oxbutton.classList.remove('fa-times')
+                            oxbutton.classList.remove('fas')
+                            oxbutton.classList.add('fa-circle')
+                            oxbutton.classList.add('far')
+                            title.innerHTML = `<p>${response.data['info_title']}</p>`
+
+                        } else {
+                            oxbutton.classList.remove('fa-circle')
+                            oxbutton.classList.remove('far')
+                            oxbutton.classList.add('fa-times')
+                            oxbutton.classList.add('fas')
+                            title.innerHTML = `<a href="/notice/detail/${id}">${response.data['info_title']}</a>`
+                        }
+                    })
+            },
+            movedetail(id) {
+                console.log(id)
             }
-        })
-    </script>
+        
+        },
+        mounted() {
+            if (this.message) {
+                    alert(this.message)
+                }
+        }
+    })
+</script>
 {% endblock %}
