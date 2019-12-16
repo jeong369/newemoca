@@ -31,19 +31,42 @@
 {% endblock %}
 
 {% block body %}
+{% load static %}
+<header class="about">
+    <div class="container h-100">
+        <div class="row h-100">
+        <div class="col-lg-12 my-auto">
+            <div class="about-content mx-auto">
+            <h1 class="mb-5"><U>공지사항</U></h1>
+            
+            {% if request.user.is_staff %}
+                <div class="row d-flex justify-content-end">
+                    <button onClick="location.href='/notice/create/'">새글작성</button>
+                </div>
+            {% else %}
+                <div class="row" style="visibility: hidden;">
+                    <button onClick="location.href='/notice/create/'">새글작성</button>
+                </div>
+            {% endif %}
+
+
+            <h2 class="mb-5">인간과 유사하게 소통하면서 상대방의 감정을 추론하고 판단한 결과를 기반으로 한 감성적 대화를 통해 정서적인 공감대를 형성할 수 있는 감성지능을 개발합니다.</h2>
+            <h4 class="mb-2">첫째, 상대방의 표정, 말투, 목소리 등을 통해 감정을 정확하게 판단하고 추론합니다.</h4><br>
+            <h4 class="mb-2">둘째, 상대방의 나이, 성별에 따라 대응하는 말투, 내용이 달라지며 현재의 감정 상태에 맞는 적절한 감정 대응이 가능하도록 합니다.</h4><br>
+            <h4 class="mb-2">셋째, 더 나아가 스트레스, 정서적 불안 등을 인식하고 학습 및 추론하여 더 나은 응용 서비스를 제공합니다.</h4><br>
+            <h4 class="mb-2">넷째,  적절한 대화를 위한 윤리적 판단 기준과 조치 등을 연구합니다.</h4><br>
+            </div>
+        </div>
+        </div>
+    </div>
+</header>
+
+
     <div id="notice">
         <h1 class="" style="text-align:center; margin-top: 5rem; margin-bottom: 3rem;"> 공지사항 </h1>
         <hr>
         
-        {% if request.user.is_staff %}
-            <div class="row d-flex justify-content-end">
-                <button onClick="location.href='/notice/create/'">새글작성</button>
-            </div>
-        {% else %}
-            <div class="row" style="visibility: hidden;">
-                <button onClick="location.href='/notice/create/'">새글작성</button>
-            </div>
-        {% endif %}
+        
                 
         <div class="row">
 
