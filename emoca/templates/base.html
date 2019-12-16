@@ -61,38 +61,9 @@
     </div>
   </nav>
 
-  
-  <header class="masthead">
-    <div class="container h-100">
-      <div class="row h-100">
-        {% block body %}
-        <div class="col-lg-7 my-auto">
-          <div class="header-content mx-auto">
-            <h1 class="mb-5">EMOCA</h1>
-            <h1 class="mb-5">기분 좋은 대화 챗봇</h1>
-            <h2 class="mb-5">EMOCA와 함께 즐거운 감성대화를 시작해 보세요!</h2>
-            <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Start Now for Happiness!</a>
-          </div>
-        </div>
-        <div class="col-lg-5 my-auto">
-          <div class="device-container">
-            <div class="device-mockup iphone6_plus portrait black">
-              <div class="device">
-                <div class="screen">
-                  <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                  <img src="{% static 'notice/images/login-1.png' %}" class="img-fluid" alt="">
-                </div>
-                <div class="button">
-                  <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        {% endblock %}
-      </div>
-    </div>
-  </header>
+{% block body %}
+
+
 
   <section class="features" id="features">
     <div class="container">
@@ -179,7 +150,7 @@
   <!-- Custom scripts for this template -->
   <script src="{% static 'notice/js/new-age.min.js' %}"></script>
 
-
+  {% endblock %}
 
   <footer>
     <div class="container text-left ">
