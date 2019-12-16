@@ -34,7 +34,7 @@
     <div class="row">
         <ul id="collection" >
             {% for test in test_lists %}
-                <li id="q{{forloop.counter}}" style="display:list-item; {% if forloop.counter != 1 %} visibility:hidden; {% else %} visibility: visible;{% endif %}">
+                <li id="q{{forloop.counter}}" style="display:list-item; {% if forloop.counter != 1 %} display:none; {% else %} visibility: visible;{% endif %}">
                     <div class="qeustion_wrapper" >
                         <div class="question_{{test.pk}}">
                             {% if test.question_ko %}
@@ -136,6 +136,8 @@
                     var next_question = document.querySelector(`#q${idx+1}`)
                     // console.log(next_question)
                     next_question.style.visibility = 'visible';
+                    next_question.style.display = 'inline';
+
                 }
 
                 
