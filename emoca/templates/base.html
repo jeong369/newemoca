@@ -61,11 +61,11 @@
     </div>
   </nav>
 
-  {% block body %}
   
   <header class="masthead">
     <div class="container h-100">
       <div class="row h-100">
+        {% block body %}
         <div class="col-lg-7 my-auto">
           <div class="header-content mx-auto">
             <h1 class="mb-5">EMOCA</h1>
@@ -89,6 +89,7 @@
             </div>
           </div>
         </div>
+        {% endblock %}
       </div>
     </div>
   </header>
@@ -178,7 +179,7 @@
   <!-- Custom scripts for this template -->
   <script src="{% static 'notice/js/new-age.min.js' %}"></script>
 
-  {% endblock %}
+
 
   <footer>
     <div class="container text-left ">
