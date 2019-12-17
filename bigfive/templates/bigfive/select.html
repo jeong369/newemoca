@@ -2,51 +2,56 @@
 
 {% block style %}
 <style>
-    #bigfiveselect {
-        width:100%;
-        margin-left: 50px;
-        margin-right: 50px;
-        /* display: flex; */
-    }
-    .buttoncollect {
-        width: 50%;
-    }
-    #bigfiveselect .row {
-        justify-content: center;
-        text-align: center;
-        margin-top: 12px;
-        /* width : 20px; */
-    }
+.box-content {
+    background-color:white;
+    border: 2px solid cornflowerblue;
+    padding: 2em 2em;
+    text-align: center;
+    border-radius: 20px;
+}
+.select .box-content button {
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    color: white;
+    height: fit-content;
+    width: 80%;
+    font-size: large;
+    padding: 0.7em;
+}
 </style>
 {% endblock %}
 
 {% block body %}
-<div id="bigfiveselect">
-    <h1 style="text-align:center; margin-top: 5rem; margin-bottom: 3rem;">[[ username ]]님, 환영합니다. <br>설문을 선택해주세요.</h1><hr>
-    <div class="buttoncollect">
+{% load static %}
+<div class="select h-100" id="bigfiveselect">
+    <div class="container h-75">
+        <div class="row h-75">
+        <div class="col-lg-12 my-auto">
+            <div class="select-content mx-auto">
+            <h1 class="p-5 my-auto" style="">[[ username ]]님, 환영합니다. <br>설문을 선택해주세요.</h1>
+            <div class="box-content">
+                <div class="buttoncollect">
 
-        <div class="row" style="">
-            <button v-on:click="gotest(12)">매우 간단한 12문항</button>
+                    <div class="mb-5" style="">
+                        <button v-on:click="gotest(12)">매우 간단한 12문항</button>
+                    </div>
+                    <div class="mb-5">
+                        <button v-on:click="gotest(50)">간단한 50문항</button>
+                    </div>
+                    <div class="mb-5">
+                        <button v-on:click="gotest(100)">무난한 100문항</button>
+                    </div>
+                    <div class="mb-5">
+                        <button v-on:click="gotest(120)">정확한 120문항</button>
+                    </div>
+                    <div class="">
+                        <button v-on:click="gotest(300)">매우 정확한 300문항</button>
+                    </div>
+                </div>
         </div>
-        <div class="row">
-            <button v-on:click="gotest(50)">간단한 50문항</button>
         </div>
-        <div class="row">
-            <button v-on:click="gotest(100)">무난한 100문항</button>
-        </div>
-        <div class="row">
-            <button v-on:click="gotest(120)">정확한 120문항</button>
-        </div>
-        <div class="row">
-            <button v-on:click="gotest(300)">매우 정확한 300문항</button>
         </div>
     </div>
-    <hr>
-    <p>
-        ※ 아래와 같은 논문을 참고한 사이트 IPIP를 인용하여 작성된 설문입니다. ※<br>
-        Goldberg, L. R. (1992). The development of markers for the Big-Five factor structure. Psychological Assessment, 4, 26-42.
-        Johnson, J. A. (2014). Measuring thirty facets of the Five Factor Model with a 120-item public domain inventory: Development of the IPIP-NEO-120. Journal of Research in Personality, 51, 78-89.
-    </p>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -94,11 +99,6 @@
                 this.resetscore(number)
                 var url = `/bigfive/select/${number}`;
                 location.href = url
-
-                // axios.get(url)
-                //     .then(function(response) {
-                //         console.log(response)
-                //     })
                 
             },
         

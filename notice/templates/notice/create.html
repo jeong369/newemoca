@@ -8,10 +8,11 @@
 {% block body %}
 {% load static %}
 <header class="createNotice">
-    <div class="container h-100">
-        <div class="row h-100">
+    <div class="container h-75">
+        <div class="row h-75">
         <div class="col-lg-12 my-auto">
             <div class="createNotice-content mx-auto">
+                <h1 class="doubleline">새 글 작성</h1>
                 <form class="modal-contentsignup" action="/notice/create/" method="POST" enctype="multipart/form-data">
                   {% csrf_token %}
                   <div class="createdspace">
@@ -29,7 +30,5 @@
         </div>
     </div>
 </header>
-<div id="post">
-    
-</div>
+
 {% endblock %}

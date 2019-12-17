@@ -2,48 +2,55 @@
 
 {% block style %}
 <style>
-    #bigfivemain {
-        width:100%;
-        margin-left: 50px;
-        margin-right: 50px;
-        
-    }
-    #bigfivemain .row {
-        display: flex;
-        height: 10em;
-        text-align: center;
-        
-    }    
-    .startBtn {
-        height: 50px;
-        margin-left: 45%;
-        margin-right: 45%;
-        text-align: center;
-        border-radius: 5px;
-    }
-    .startBtn:hover {
-        background-color: skyblue;
-    }
+.startBtn {
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    color: white;
+    height: fit-content;
+    width: 80%;
+    font-size: large;
+    padding: 0.7em;
+}
+.box-title {
+    color:cornflowerblue;
+    font-weight: 200;
+    text-align: center;
+    justify-content: center;
+
+}
+.box-content {
+    background-color:white;
+    border: 2px solid cornflowerblue;
+    padding: 2em 2em;
+    text-align: center;
+    border-radius: 20px;
+}
 </style>
 {% endblock %}
 
 {% block body %}
-<div id="bigfivemain">
-    <h1 class="" style="text-align:center; margin-top: 5rem; margin-bottom: 1rem;">성격 테스트</h1>
-    <text style="margin-bottom: 10px;">
-        ※ 아래와 같은 논문을 참고한 사이트 IPIP를 인용하여 작성된 설문입니다. ※<br>
-        Goldberg, L. R. (1992). The development of markers for the Big-Five factor structure. Psychological Assessment, 4, 26-42.
-        Johnson, J. A. (2014). Measuring thirty facets of the Five Factor Model with a 120-item public domain inventory: Development of the IPIP-NEO-120. Journal of Research in Personality, 51, 78-89.
-    </text><br>
-    <text style="font-size: 20px; margin-top:10px;">
-        이 무료 테스트를 통하여 자신의 성격을 알아보세요. 
-    </text>
-    <hr>
-    <div class="row">
-        <p style="font-size: 50px; text-align:center;">나랑 닮은 애니메이션 캐릭터는 ?</p>
-        <button type="button" class="startBtn" onClick="location.href='/accounts/create/'">시작하기</button>
+{% load static %}
+<div class="bigfive h-100">
+    <div class="container h-75">
+        <div class="row h-75">
+        <div class="col-lg-12 my-auto">
+            <div class="bigfive-content mx-auto">
+            <h1 class="p-5 my-auto" style="">나와 비슷한 애니메이션 캐릭터는?</h1>
+            <div class="box-title">
+            </div>
+            <div class="box-content">
+                <img src="{% static 'notice/images/엘사1.png' %}" style="max-width:100%; width:100%;" height="auto">
+                <p class="mb-5" style="padding-top:5em; font-size:1em;">이 무료 테스트를 통하여 자신의 성향을 알아보세요.</p>
+                <!-- <h2 class="mb-2">나랑 닮은 애니메이션 캐릭터는 ?</h2><br> -->
+                <p class="mb-5" style="text-align: left;">※ 아래와 같은 논문을 참고한 사이트 IPIP를 인용하여 작성된 설문입니다. ※<br>
+                Goldberg, L. R. (1992). The development of markers for the Big-Five factor structure. Psychological Assessment, 4, 26-42.
+                Johnson, J. A. (2014). Measuring thirty facets of the Five Factor Model with a 120-item public domain inventory: Development of the IPIP-NEO-120. Journal of Research in Personality, 51, 78-89.
+                </p>
+                <button type="button" class="startBtn mb-5" onClick="location.href='/accounts/create/'">시작하기</button>
+            </div>
+        </div>
+        </div>
+        </div>
     </div>
-    <hr>
-
 </div>
 {% endblock %}
