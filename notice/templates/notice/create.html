@@ -1,101 +1,35 @@
 {% extends 'base.html' %}
 
 {% block style %} 
-<style>
-    #post {
-
-        height: 800px;
-        width: 100%;
-        padding: 20px 20px 20px 20px;
-
-
-    }
-    .createdspace {
-      margin-top: 5rem;
-      text-align: center;
-      vertical-align: middle;
-    }
-    .submitBtn {
-        text-align: center;
-    }
-    #post p {
-      color: grey;
-      opacity: 0.7;
-    }
-</style>
 
 
 {% endblock %}
 
 {% block body %}
-<div id="post">
-    <form class="modal-contentsignup" action="/notice/create/" method="POST" enctype="multipart/form-data">
-      {% csrf_token %}
-      <div class="createdspace">
-          {{ post_form.media}}
-          {{post_form.as_p}}
-
-        <!-- <tr>
-          <th>
-            <label for="id_title">제목:</label>
-          </th>
-          <td>
-            <input type="text" name="title" maxlength="100" required id="id_title"><br>
-            <span class="helptext">최대 100자 내로 입력해주세요</span>
-          </td>
-        </tr>
-        <tr>
-          <th>
-            <label for="id_content"></label>
-          </th>
-          <td>
-            <textarea name="content" cols="40" rows="10" required id="id_content"></textarea>
-          </td>
-        </tr>
-        <tr>
-          <th>
-            <label for="id_available">공개여부:</label>
-          </th>
-          <td>
-            <select name="available" required id="id_available">      
-              <option value="1" selected>공개</option>
-              <option value="0">비공개</option>
-              
-            </select>
-          </td>
-        </tr>
-        <tr>
-          <th>
-            <label for="id_file">파일 첨부</label>
-          </th>
-          <td>
-            <input type="file" name="file" id="id_file">
-          </td>
-        </tr> -->
-      </div>
-        <!-- <h1 style="text:bold;text-align:center">POST</h1>
-        <label class="label" for="title"><b>제목 : </b></label>
-        <input type="text" name="title">
-        <br>
-
-        <label class="label" for="content"><b>내용 : </b></label>
-        <input type="textarea" name="content">
-        <br>
-
-        <p>이 글의 공개여부를 체크해주세요</p>
-        <label class="label" for="available"><b>공개여부 : </b></label>
-          <input style="margin-top:10px;margin-bottom:10px" type="radio" name="available" value="1" required>공개 &nbsp;
-          <input style="margin-top:10px;margin-bottom:10px" type="radio" name="available" value="0" required>비공개 &nbsp;
-        <br>
-
-        <label class="label" for="file">파일첨부</label>
-        <input type="file" name="file"> -->
-
-        <div class="submitBtn">
-          <input type="submit" class="sign_in_up" value="확인">
-          <!-- <input type="button" onclick="document.getElementById('id02').style.display='none'" class="cancel" value="Cancel"> -->
+{% load static %}
+<header class="createNotice">
+    <div class="container h-100">
+        <div class="row h-100">
+        <div class="col-lg-12 my-auto">
+            <div class="createNotice-content mx-auto">
+                <form class="modal-contentsignup" action="/notice/create/" method="POST" enctype="multipart/form-data">
+                  {% csrf_token %}
+                  <div class="createdspace">
+                      {{ post_form.media}}
+                      {{post_form.as_p}}
+                  </div>
+            
+                    <div class="submitBtn mt-3" style="text-align:center">
+                      <input type="submit" class="" style="border-radius: 5px; background-color: cornflowerblue; color:white; height:35px;" value="확인">
+                    </div>
+                  </div>
+                </form>
+            </div>
         </div>
-      </div>
-    </form>
+        </div>
+    </div>
+</header>
+<div id="post">
+    
 </div>
 {% endblock %}

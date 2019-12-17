@@ -15,12 +15,12 @@
             <h1 class="mb-5 doubleline">공지사항</h1>
             
             {% if request.user.is_staff %}
-                <div class="createPost mb-5">
-                    <button onClick="location.href='/notice/create/'">새글작성</button>
+                <div class="mb-5" style="text-align:right">
+                    <button class="createPost" onClick="location.href='/notice/create/'">새글작성</button>
                 </div>
             {% else %}
-                <div class="createPost mb-5" style="visibility: hidden;">
-                    <button onClick="location.href='/notice/create/'">새글작성</button>
+                <div class="mb-5" style="visibility: hidden; text-align:right">
+                    <button class="createPost" onClick="location.href='/notice/create/'">새글작성</button>
                 </div>
             {% endif %}
 
