@@ -11,11 +11,11 @@ class CreateForm(forms.ModelForm):
 
         widgets = {
             'title' : forms.TextInput(
-                attrs = {'title':'제목', 'class' : 'form-cotrol', 'style':'width: 100%', 
+                attrs = {'title':'제목', 'class' : 'form-cotrol', 'style':'width:80%; min-width:300px;',
                             'placeholder': '제목을 입력하세요.', 'maxlength': '100'},
             ),
             'availabel' : forms.Select(
-                attrs={'title':'공개여부','class':'custom-select'},
+                attrs={'title':'공개여부','class':'custom-select', 'style':'width:80%; min-width:300px;'},
             ),
             'content' : forms.CharField(widget=CKEditorUploadingWidget()),
             
