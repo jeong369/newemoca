@@ -2,60 +2,67 @@
 
 {% block style %}
 <style>
-    #bigfivetest {
-        width:100%;
-        margin-left: 50px;
-        margin-right: 50px;
-    }
-    #collection {
-        display: block;
-    }
     #bigfivetest .answer {
         border: 1px solid black;
-        border-radius: 5px;
-        margin: 5px 0 5px;
-        
-        font-size:1em;
-        /* pointer-events: none; */
+        border-radius: 10px;
+        padding: 0.7em;
+        text-align: center;
+        font-size:large;
+        width: 80%;
+        height: fit-content;
+        margin-bottom: 2vh;
     }
     .answer:hover {
         cursor: pointer;
         background-color: skyblue;
-        color : black;
+        color : white;
+        
+    }
+    .box-content {
+        background-color:white;
+        border: 2px solid cornflowerblue;
+        border-radius: 20px;
+        padding: 2em 2em;
     }
 </style>
 {% endblock %}
 
 {% block body %}
-<div id="bigfivetest">
-    <h1 style="text-align:center; margin-top: 5rem; margin-bottom: 3rem;">bigfive 설문</h1>
-    <hr>
-
-    <div class="row">
-        <ul id="collection" >
-            {% for test in test_lists %}
-                <li id="q{{forloop.counter}}" style="display:list-item; {% if forloop.counter != 1 %} display:none; {% else %} visibility: visible;{% endif %}">
-                    <div class="qeustion_wrapper" >
-                        <div class="question_{{test.pk}}">
-                            {% if test.question_ko %}
-                                <b>{{ test.question_ko }}</b>
-                            {% else %}
-                                <b>{{ test.question }}</b>
-                            {% endif %}
-                        </div>
-                        <div class="answer" value="1" v-on:click="keepscore({{test.pk}}, {{forloop.counter}}, 1)">전혀 그렇지 않다.</div>
-                        <div class="answer" value="2" v-on:click="keepscore({{test.pk}}, {{forloop.counter}}, 2)">그렇지 않다.</div>
-                        <div class="answer" value="3" v-on:click="keepscore({{test.pk}}, {{forloop.counter}}, 3)">보통이다.</div>
-                        <div class="answer" value="4" v-on:click="keepscore({{test.pk}}, {{forloop.counter}}, 4)">약간 그렇다.</div>
-                        <div class="answer" value="5" v-on:click="keepscore({{test.pk}}, {{forloop.counter}}, 5)">매우 그렇다.</div>
-                    </div>
-                </li>
-                
-                
-                
-            {% endfor %}
-
-        </ul>
+{% load static %}
+<div class="test h-100" id="bigfivetest">
+    <div class="container h-75">
+        <div class="row h-75">
+        <div class="col-lg-12 my-auto">
+            <div class="test-content mx-auto">
+            <h1 class="p-5 my-auto" style="">끝까지 성실하게 대답해주세요^^</h1>
+            <div class="box-content">
+                <ul id="collection" style="font-size:2vh; list-style: none" class="mb-5">
+                    {% for test in test_lists %}
+                        <li id="q{{forloop.counter}}" style="display:list-item; {% if forloop.counter != 1 %} display:none; {% else %} visibility: visible;{% endif %}">
+                            <div class="qeustion_wrapper" >
+                                <div class="question_{{test.pk}} mb-5" >
+                                    {% if test.question_ko %}
+                                        <b>Q. {{ test.question_ko }}</b>
+                                    {% else %}
+                                        <b >Q. {{ test.question }}</b>
+                                    {% endif %}
+                                </div>
+                                <div class="answer" value="1" v-on:click="keepscore({{test.pk}}, {{forloop.counter}}, 1)">전혀 그렇지 않다.</div>
+                                <div class="answer" value="2" v-on:click="keepscore({{test.pk}}, {{forloop.counter}}, 2)">그렇지 않다.</div>
+                                <div class="answer" value="3" v-on:click="keepscore({{test.pk}}, {{forloop.counter}}, 3)">보통이다.</div>
+                                <div class="answer" value="4" v-on:click="keepscore({{test.pk}}, {{forloop.counter}}, 4)">약간 그렇다.</div>
+                                <div class="answer" value="5" v-on:click="keepscore({{test.pk}}, {{forloop.counter}}, 5)">매우 그렇다.</div>
+                            </div>
+                        </li>
+                        
+                        
+                        
+                    {% endfor %}
+        
+                </ul>
+        </div>
+        </div>
+        </div>
     </div>
 </div>
 

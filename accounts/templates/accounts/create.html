@@ -2,89 +2,91 @@
 
 {% block style %} 
 <style>
-    #signup {
-        /* text-align: center; */
-        height: 800px;
-        width: 100%;
-        padding: 20px 20px 20px 20px;
-        /* justify-content: center; */
+label {
+    font-size: 2vh;
+    display:block;
+}
+.sign_in_up {
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    color: white;
+    height: fit-content;
+    width: 80%;
+    font-size: large;
+    padding: 0.7em;
+}
+.box-content {
+    background-color:white;
+    border: 2px solid cornflowerblue;
+    padding: 2em 2em;
+    text-align: left;
+}
+.sign_in_up_input_name {
+    width:100%;
+    height: 3vh;
+}
+.sign_in_up_input_age {
+    width:100%;
+    height: 3vh;
+}
 
-    }
-    #signupform {
-        display : inline-block;
-        padding: 20px 20px 20px 20px;
-        
-    }
-    #signupform .row {
-        margin-bottom: 10px;
-    }
-    #signupform label {
-        width: 100px;
-    }
-    .sign_in_up_input_age {
-        width : 500px;
-    }
-    .sign_in_up_input_name {
-        width : 500px;
-    }
-    .submitBtn {
-        text-align: center;
-    }
 </style>
 
 
 {% endblock %}
 
 {% block body %}
-<div id="signup">
-    <h1 class="" style="text-align:center; margin-top: 5rem; margin-bottom: 5rem;">성격 테스트</h1>
-    <text style="font-size: 20px;">
-        이 무료 테스트를 통하여 자신의 성격을 알아보세요. 
-    </text>
-    <hr>
-    <form class="modal-contentsignup" action="/accounts/create/" method="POST">
-      {% csrf_token %}
-      <h1 style="text:bold;text-align:center">당신의 정보를 알려주세요</h1>
-      <hr>
-      <div id="signupform" class="container" style="flow">
-        {% for message in messages %}
-            {% if message.tags %}
-                <p>※ {{ message }} ※</p><br>
-            {% endif %}
-        {% endfor %}
-        <div class="row">
-            <label class="label" for="nickname"><b>닉네임</b></label>
-            <input class="sign_in_up_input_name" type="text" placeholder="당신만의 닉네임을 적어주세요." name="name" required>
-            <br>
+{% load static %}
+<div class="account h-100">
+    <div class="container h-75">
+        <div class="row h-75">
+        <div class="col-lg-12 my-auto">
+            <div class="account-content mx-auto">
+            <h1 class="p-5 my-auto" style="">당신은 누구?</h1>
+            <div class="box-content">
+                <img src="{% static 'notice/images/엘사1.png' %}" style="max-width:100%; width:100%;" height="auto">
+                <p class="mb-5" style="padding-top:5em; font-size:1em;">이 무료 테스트를 통하여 자신의 성향을 알아보세요.</p>
+                <form class="modal-contentsignup" action="/accounts/create/" method="POST">
+                    {% csrf_token %}
+                    <div id="signupform" class="" style="flow">
+                      {% for message in messages %}
+                          {% if message.tags %}
+                              <p>※ {{ message }} ※</p><br>
+                          {% endif %}
+                      {% endfor %}
+                      <div class="mb-5">
+                          <label class="label" for="nickname"><b>닉네임</b></label>
+                          <input class="sign_in_up_input_name" type="text" placeholder="당신만의 닉네임을 적어주세요." name="name" required>
+                          <br>
+                      </div>
+              
+                      <div class="mb-5">
+                          <label class="label" for="age"><b>나이</b></label>
+                          <p>만 20세 이상부터 만 70세 이하만 가능합니다.</p>
+                          <input class="sign_in_up_input_age" type="text" placeholder="나이를 적어주세요." name="age" required>
+                          <br>
+                      </div>
+              
+                      <div class="mb-5">
+                          <label class="label" for="gender"><b>성별</b></label>
+                          <input class="sign_in_up_input_gender" style="margin-top:10px;margin-bottom:10px" type="radio" name="gender" value="m" required>남성 &nbsp;
+                          <input class="sign_in_up_input_gender" style="margin-top:10px;margin-bottom:10px" type="radio" name="gender" value="f" required>여성 &nbsp;
+                          <input class="sign_in_up_input_gender" style="margin-top:10px;margin-bottom:10px" type="radio" name="gender" value="o" required>기타<br>
+                      </div>
+                
+                      <div class="submitBtn" style="text-align: center;">
+                        <input type="submit" class="sign_in_up" value="확인">
+                        <!-- <input type="button" onclick="document.getElementById('id02').style.display='none'" class="cancel" value="Cancel"> -->
+                      </div>
+                    </div>
+                  </form>            
+                </div>
         </div>
-
-        <div class="row">
-            <label class="label" for="age"><b>나이</b></label>
-            <input class="sign_in_up_input_age" type="text" placeholder="만 20세 이상부터 가능합니다. 나이를 적어주세요." name="age" required>
-            <br>
         </div>
-
-        <div class="row">
-            <label class="label" for="gender"><b>성별</b></label>
-            <input class="sign_in_up_input_gender" style="margin-top:10px;margin-bottom:10px" type="radio" name="gender" value="m" required>남성 &nbsp;
-            <input class="sign_in_up_input_gender" style="margin-top:10px;margin-bottom:10px" type="radio" name="gender" value="f" required>여성 &nbsp;
-            <input class="sign_in_up_input_gender" style="margin-top:10px;margin-bottom:10px" type="radio" name="gender" value="o" required>기타<br>
         </div>
-  
-  
-        <div class="submitBtn">
-          <input type="submit" class="sign_in_up" value="확인">
-          <!-- <input type="button" onclick="document.getElementById('id02').style.display='none'" class="cancel" value="Cancel"> -->
-        </div>
-      </div>
-    </form>
-    <hr>
-    <text>
-        ※ 아래와 같은 논문을 참고한 사이트 IPIP를 인용하여 작성된 설문입니다. ※<br>
-        Goldberg, L. R. (1992). The development of markers for the Big-Five factor structure. Psychological Assessment, 4, 26-42.
-        Johnson, J. A. (2014). Measuring thirty facets of the Five Factor Model with a 120-item public domain inventory: Development of the IPIP-NEO-120. Journal of Research in Personality, 51, 78-89.
-    </text>
+    </div>
 </div>
+
 <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
 <script>
     $(".sign_in_up_input_name").change(function(){

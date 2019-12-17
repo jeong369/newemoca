@@ -2,21 +2,49 @@
 
 {% block style %}
 <style>
+.box-content {
+    background-color:white;
+    border: 2px solid cornflowerblue;
+    border-radius: 20px;
+    padding: 2em 2em;
+    text-align: center;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "div-image div-context";
 
+}
 </style>
 {% endblock %}
 
 {% block body %}
-<div id="bigfiveresult">
-    <h1 class="" style="text-align:center; margin-top: 5rem; margin-bottom: 5rem;">당신의 성향은....</h1>
-    <hr>
-    <div class="row" style="display:none;">
-        {% for result in resultlists %}
-            {{result.grade}}
-        {% endfor %}
+{% load static %}
+<div class="test h-100" id="bigfiveresult">
+    <div class="container h-75">
+        <div class="row h-75">
+        <div class="col-lg-12 my-auto">
+            <div class="test-content mx-auto">
+            <h1 class="p-5 my-auto" style="">당신은....!</h1>
+
+            <div class="row" style="display:none;">
+                {% for result in resultlists %}
+                    {{result.grade}}
+                {% endfor %}
+            </div>
+            <p id="scoreset" style="display: none;">{{score_set}}</p>
+
+            <div class="box-content mb-5">
+                <div class="div-image">
+                    <img src="{% static 'notice/images/엘사1.png' %}" style="max-width:100%; width:100%;" height="auto">
+                </div>
+                <div class="div-context">
+                    <p>냉철하지만 정이 많은 엘사와 비슷한 당신! 당신의 성향은...</p>
+                </div>
+            </div>
+        </div>
+        <canvas id="barChart" style="max-width: 100%;"></canvas>
+        </div>
     </div>
-    <p id="scoreset" style="display: none;">{{score_set}}</p>
-    <canvas id="barChart" style="max-width: 500px;"></canvas>
 </div>
 
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
